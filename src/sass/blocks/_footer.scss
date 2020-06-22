@@ -1,0 +1,56 @@
+.footer {
+  background-color: #fff;
+  padding: 60px;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  .footer_bottom {
+    width: 100%;
+    border-top: 1px solid $color-gray-border;
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      .bottom_logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 40%;
+          .logo {
+            margin-right: 20px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 16px;
+            color: $color-black-light;
+            font-family: $font-family_Inter-light;
+          }
+      }
+    .bottom_contacts {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+        .phone {
+          margin-right: 80px;
+        }
+      .post {
+        margin-right: 80px;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+          margin-right: 24px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

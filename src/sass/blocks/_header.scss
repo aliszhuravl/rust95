@@ -1,0 +1,20 @@
+.header {
+  border-bottom: 1px solid $color-gray-border;
+}
+
+.header__inner {
+  width: 100%;
+  padding: 24px 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+    .contact_box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+        .phone {
+          margin-right: 80px;
+        }
+    }
+}

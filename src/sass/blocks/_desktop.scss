@@ -1,0 +1,106 @@
+@media (max-width: 1600px) {
+  h1 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .header__inner {
+    padding: 24px 40px;
+  }
+  .grid_block {
+    width: 100%;
+    min-width: 1112px;
+    max-width: 1112px;
+    margin: 0 auto;
+  }
+  .numbers {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .large {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .text_20, .tile__item_text .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .nav__link {
+    padding: 0 20px;
+    a {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  .header__inner .contact_box .phone {
+    margin-right: 60px;
+    a {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .video_slider .slider_nav__inner {
+    .sni_item {
+      padding: 40px;
+      .progress-bar {
+        width: 180px;
+      }
+    }
+    .link_block {
+      padding: 32px 40px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  .video_slider__inner .vs_slide__inner .video_container__text {
+    padding: 60px;
+    .vct_top p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .partners_box .right {
+    padding-right: 40px;
+    width: 75%;
+
+  }
+  .partners_box .left {
+    padding: 40px;
+    padding-right: 20px;
+    width: 25%;
+  }
+  .text_16 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .inter_16 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .small {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .partners_box .left .text_12 {
+    margin-top: 20px;
+  }
+  .tile_25__item {
+    padding: 40px 24px;
+    .text_box p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .tile_4 {
+    .tile__item {
+      padding: 20px 20px 60px 20px;
+    }
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .footer {
+    padding: 40px 60px;
+  }
+}

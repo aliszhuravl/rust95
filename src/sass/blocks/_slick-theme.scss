@@ -1,0 +1,188 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+
+}
+
+/* Icons */
+@font-face
+{
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+  border-radius: 0;
+  color: transparent;
+  position: absolute;
+  z-index: 5;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  content: '';
+  padding: 0;
+}
+.slick-next {
+
+}
+.slick-prev {
+
+}
+.slick-prev:hover,
+.slick-next:hover
+{
+
+}
+
+
+.slick-prev
+{
+  bottom: 500px;
+  right: 150px;
+}
+[dir='rtl'] .slick-prev
+{
+  right: -25px;
+  left: auto;
+}
+
+.slick-next
+{
+  bottom: 500px;
+  right: 100px;
+}
+[dir='rtl'] .slick-next
+{
+  right: auto;
+  left: -25px;
+}
+
+/* Dots */
+//mediatore e muto
+
+.slick-dotted.slick-slider
+{
+  margin-bottom: 30px;
+}
+
+.slick-dots
+{
+  position: absolute;
+  bottom: 32px;
+  z-index: 5;
+  width: 98%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+
+  list-style: none;
+}
+
+.slick-dots li
+{
+  position: relative;
+
+  display: inline-block;
+
+  width: 20%;
+  height: 3px;
+  padding: 0;
+  background-color: transparent;
+  opacity: 0;
+  bottom: 2px;
+
+  transition: all 0.4s ease-in-out;
+
+  cursor: pointer;
+}
+.slick-dots li button
+{
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
+
+  width: 1%;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  height: 3px;
+
+  cursor: pointer;
+
+  color: transparent;
+  border: 0;
+  outline: none;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+  outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+  opacity: 1;
+}
+.slick-dots li button:before
+{
+  font-size: 6px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: '•';
+  text-align: center;
+
+  opacity: .25;
+  color: black;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active
+{
+  background-color: transparent;
+  opacity: 1;
+  width: 20%;
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 758px;
+}
+
+.sw-armenia {
+  height: 650px;
+}
+
+.slick-dots li.slick-active button {
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.slider-buttons-wrapper {
+  display: flex;
+  position: relative;
+  @extend .layout-inner;
+  margin: 0 auto;
+  height: 50px;
+  bottom: 180px;
+}
+
+.slider-buttons {
+  margin-left: auto;
+  margin-top: -33px;
+  width: 100px;
+  height: 50px;
+}

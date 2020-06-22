@@ -1,0 +1,119 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: $color-white;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family_Inter;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $color-black;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  transition: color, .2s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 80px;
+  font-family: $font-family;
+  font-weight: normal;
+}
+
+.numbers {
+  font-family: $font-family;
+  font-size: 64px;
+  line-height: 64px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 44px;
+  font-family: $font-family;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 32px;
+  font-family: $font-family;
+  font-weight: normal;
+}
+
+.text_28 {
+  font-size: 28px;
+  line-height: 36px;
+  font-family: $font-family_medium;
+}
+
+.text_20 {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $font-family_medium;
+  margin-bottom: 20px;
+}
+
+.text_16 {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: $font-family;
+}
+
+.inter_16 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $font-family_Inter;
+  color: $color-black-light;
+}
+
+.text_12 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.large {
+  font-size: 28px;
+  line-height: 36px;
+  font-family: $font-family;
+}
+
+.light {
+  opacity: 0.5;
+}
+
+.green {
+  color: $color-green;
+}
+
+.green_text {
+  color: $color-green-light;
+}
+
+.white_text {
+  color: #fff;
+}
+
+.small {
+  color: $color-black-light;
+  font-family: $font-family_Inter;
+}
