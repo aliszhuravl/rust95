@@ -97,9 +97,28 @@ $(document).ready(function() {
                 }
             },
             {
+                breakpoint: 1280,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
                 breakpoint: 640,
                 settings: {
-                    slidesToShow: 1,
+                    arrows: false,
+                    slidesToShow: 2,
+                    centerMode: true,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 340,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    centerMode: false,
                     slidesToScroll: 1
                 }
             }
@@ -220,3 +239,31 @@ $(document).ready(function() {
 //
 //     console.log(currentSlide, targetSlide);
 // });
+(function($) {
+    var hamburger = $('.hamburger');
+    var body = $('body');
+
+    function hamburgerOpen() {
+        hamburger.addClass('hamburger_active');
+        $('body').addClass('stopped');
+        $('.menu').addClass('menu-mobile_opened');
+    }
+
+    function hamburgerClose() {
+        hamburger.removeClass('hamburger_active');
+        $('body').removeClass('stopped');
+        $('.menu').removeClass('menu-mobile_opened');
+    }
+
+    hamburger.on('click', function () {
+        if ( $(this).hasClass('hamburger_active') ) {
+            hamburgerClose()
+        } else {
+            hamburgerOpen();
+        }
+    });
+
+    $('.menu-mobile__close').on('click', function () {
+        body.addClass('menu-mobile_closed');
+    });
+})(jQuery);

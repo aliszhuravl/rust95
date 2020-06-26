@@ -21,6 +21,10 @@
 @import "blocks/_slick-theme.scss";
 @import "blocks/_slick";
 @import "blocks/_desktop";
+@import "blocks/_mobile";
+@import "blocks/_hamburger";
+@import "blocks/_breadcrumbs";
+@import "blocks/_additional.scss";
 
 //don't move
 @import "dev/_helpers.scss";

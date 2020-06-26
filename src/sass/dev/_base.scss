@@ -34,12 +34,12 @@ a {
 h1 {
   font-size: 80px;
   line-height: 80px;
-  font-family: $font-family;
+  font-family: $font-family-medium;
   font-weight: normal;
 }
 
 .numbers {
-  font-family: $font-family;
+  font-family: $font-family-medium;
   font-size: 64px;
   line-height: 64px;
   margin-bottom: 40px;
@@ -94,7 +94,7 @@ h3 {
 .large {
   font-size: 28px;
   line-height: 36px;
-  font-family: $font-family;
+  font-family: $font-family_medium;
 }
 
 .light {

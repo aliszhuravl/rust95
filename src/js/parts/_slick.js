@@ -15,9 +15,28 @@ $(document).ready(function() {
                 }
             },
             {
+                breakpoint: 1280,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
                 breakpoint: 640,
                 settings: {
-                    slidesToShow: 1,
+                    arrows: false,
+                    slidesToShow: 2,
+                    centerMode: true,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 340,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 2,
+                    centerMode: false,
                     slidesToScroll: 1
                 }
             }

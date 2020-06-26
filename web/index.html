@@ -5,13 +5,18 @@
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Template</title>
+    <title>РУСТ95</title>
 </head>
 <body>
 <div class="page-container page-main">
     <header class="header">
         <div class="header__inner">
            <div class="logo_box">
+               <div class="burger">
+                   <button class="hamburger" id="burger">
+                       <span></span>
+                   </button>
+               </div>
                <div class="logo">
                    <img src="img/logo.svg" alt="#">
                </div>
@@ -44,13 +49,18 @@
                     <p class="numbers"><span class="green">25 лет</span> лидерства
                         в арматуростроении</p>
                     <p class="description">РУСТ-95 крупнейший в России производитель трубопроводной арматуры. Годовой оборот компании составляет 3,6 млрд</p>
+                    <div class="mobile">
+                        <p class="text_12">Компания внесена в <a href="#" class="link">Реестр Газпрома</a></p>
+                    </div>
+                    <div class="mobile_img">
+                       <img src="img/dv.svg" alt="">
+                   </div>
                     <div class="button_container">
                         <button class="btn"><img src="img/catalog.svg">Скачать каталог продукции</button>
                         <a href="#" class="link link_arrow"><span>О компании</span> <img src="img/arrow.svg" alt="#"></a>
                     </div>
                 </div>
             </section>
-
             <section class="page__item">
                 <div class="partners_box">
                     <div class="left">
@@ -102,8 +112,19 @@
                     </div>
                 </div>
             </section>
-
-            <section class="page__item">
+            <section class="page__item page__border">
+                <div class="mobile_video">
+                    <div class="mobile_video__inner">
+                        <div class="mv_title">
+                            <img src="img/play.png" alt="">
+                            <p class="mv_title__big">В сердце потока</p>
+                            <p class="mv_title__small">Знакомство с предприятием</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_link">
+                    <a href="#" class="link link_arrow"><span>О компании</span> <img src="img/arrow.svg" alt="#"></a>
+                </div>
                 <div class="video_slider">
                     <div class="video_slider__inner" id="video-slider">
                         <div class="vs_slide">
@@ -209,9 +230,8 @@
                     </div>
                 </div>
             </section>
-
             <section class="page__item grid_block">
-                <div class="section_top">
+                <div class="section_top margin_block">
                     <div class="left"><p class="text_16">Продукция РУСТ-95</p></div>
                     <div class="right"><a class="link_with-arrow" href="#">вся продукция<span class="arrow"></span></a></div>
                 </div>
@@ -264,6 +284,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="mobile_link">
+                    <a href="#" class="link link_arrow"><span>О компании</span> <img src="img/arrow.svg" alt="#"></a>
+                </div>
             </section>
             <section class="page__item grid_block">
                 <div class="boss_block">
@@ -280,6 +303,9 @@
                             </p>
                             <p class="inter_16">Наша задача — постоянное повышение удовлетворенности потребителя, улучшение качества выпускаемой продукции на основе требований потребителей. В компании реализована система многоступенчатого Контроля качества</p>
                             <div class="sign_block">
+                                <div class="boss">
+                                    <img src="img/boss.png" alt="boss">
+                                </div>
                                 <div class="left">
                                     <p class="name">Константин Самсонов</p>
                                     <p class="position">Генеральный директор Торгового Дома РУСТ-95</p>
@@ -292,7 +318,7 @@
                     </div>
                 </div>
             </section>
-            <section class="page__item grid_block">
+            <section class="page__item grid_block margin_block">
                 <div class="section_top">
                     <div class="left"><p class="text_16">Новости</p></div>
                     <div class="right"><a class="link_with-arrow" href="#">все новости<span class="arrow"></span></a></div>
@@ -335,7 +361,10 @@
                     </div>
                 </div>
             </section>
-            <section class="page_item gray">
+            <div class="mobile_link">
+                <a href="#" class="link link_arrow"><span>О компании</span> <img src="img/arrow.svg" alt="#"></a>
+            </div>
+            <section class="page_item gray margin_block">
                 <div class="grid_block">
                     <div class="section_top">
                         <div class="left"><p class="text_16">сертификаты</p></div>
@@ -394,7 +423,10 @@
                     </div>
                 </div>
             </section>
-            <section class="page_item green_bg">
+            <div class="mobile_link no_border">
+                <a href="#" class="link link_arrow"><span>О компании</span> <img src="img/arrow.svg" alt="#"></a>
+            </div>
+            <section class="page_item green_bg margin_block">
                 <div class="grid_block">
                     <div class="section_top">
                         <div class="left"><p class="text_16 green_text">Заказать просто</p></div>
@@ -434,11 +466,13 @@
                     <p>Российский производитель трубопроводной арматуры и приборов автоматического управления</p>
                 </div>
                 <div class="bottom_contacts">
-                    <div class="phone">
-                        <a class="link" href="tel:88007775533"><span class="light">8 800 </span>777 55 33</a>
-                    </div>
-                    <div class="post">
-                        <a class="link link_green" href="mailto:info@roost.ru">info@roost.ru</a>
+                    <div class="phone_mail">
+                        <div class="phone">
+                            <a class="link" href="tel:88007775533"><span class="light">8 800 </span>777 55 33</a>
+                        </div>
+                        <div class="post">
+                            <a class="link link_green" href="mailto:info@roost.ru">info@roost.ru</a>
+                        </div>
                     </div>
                     <div class="social">
                         <a href="#"><img src="img/fb.svg" alt=""></a>

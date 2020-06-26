@@ -1,0 +1,38 @@
+.breadcrumbs {
+  margin-bottom: 80px;
+  margin-top: 24px;
+  .breadcrumbs_list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      overflow: hidden;
+      margin-bottom: 5px;
+      color: $color-gray;
+    }
+    li a {
+      text-decoration: none;
+      padding: 0 16px;
+      color: $color-gray;
+      &:hover {
+        color: $color-green-light;
+      }
+    }
+    li p {
+      color: #000;
+      opacity: 0.4;
+    }
+    li span {
+      margin: 0 4px;
+    }
+    .disabled {
+      white-space: nowrap;
+      max-width: 250px;
+      text-overflow: ellipsis;
+      padding-left: 16px;
+    }
+  }
+}
