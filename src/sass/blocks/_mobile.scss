@@ -1,4 +1,25 @@
 @media (max-width: 1199px) {
+    h3 {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  #makeMeScrollable div.scrollableArea * img {
+    margin: 0 40px;
+  }
+    .text_14 {
+      font-size: 11px;
+      line-height: 16px;
+    }
+  .caps_mini {
+    font-size: 9px;
+  }
+  .main_item {
+    background: none;
+  }
+  .link {
+    font-size: 14px;
+  }
     .header__inner {
       padding: 16px;
       .phone {
@@ -13,9 +34,11 @@
     }
     .footer {
       padding: 0 16px;
+      border-top: 1px solid $color-gray-border;
       &__inner {
         .footer_bottom {
           flex-direction: column;
+          border: 0;
           .bottom_logo {
             max-width: 100%;
             display: block;
@@ -449,6 +472,10 @@
     .mobile {
       display: block;
     }
+  .link_arrow span {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 @media (max-width: 640px) {

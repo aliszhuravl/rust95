@@ -36,6 +36,7 @@ h1 {
   line-height: 80px;
   font-family: $font-family-medium;
   font-weight: normal;
+  margin-top: 0;
 }
 
 .numbers {
@@ -54,8 +55,10 @@ h2 {
 
 h3 {
   font-size: 28px;
+  margin-top: 0;
   line-height: 32px;
-  font-family: $font-family;
+  font-family: $font-family_semibold;
+  margin-bottom: 32px;
   font-weight: normal;
 }
 
@@ -82,7 +85,7 @@ h3 {
 .inter_16 {
   font-size: 16px;
   line-height: 24px;
-  font-family: $font-family_Inter;
+  font-family: $font-family_Inter_medium;
   color: $color-black-light;
 }
 
@@ -95,6 +98,13 @@ h3 {
   font-size: 28px;
   line-height: 36px;
   font-family: $font-family_medium;
+}
+
+.text_14 {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $font-family_Inter;
+  color: $color-black-light;
 }
 
 .light {
@@ -116,4 +126,25 @@ h3 {
 .small {
   color: $color-black-light;
   font-family: $font-family_Inter;
+}
+
+.caps {
+  font-family: $font-family_medium;
+  font-size: 16px;
+  text-transform: uppercase;
+
+}
+
+.caps_mini {
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-gray;
+  text-transform: uppercase;
+  font-family: $font-family_medium;
+}
+
+.gil_16 {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family_semibold;
 }

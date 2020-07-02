@@ -5,3 +5,6 @@
 //= parts/_slick.js
 //= parts/_main.js
 //= parts/_burger.js
+//= parts/_accordion.js
+//= parts/_tabs.js
+//= parts/_scrollarea.js

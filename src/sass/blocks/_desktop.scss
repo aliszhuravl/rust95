@@ -3,6 +3,10 @@
     font-size: 56px;
     line-height: 56px;
   }
+  .link_arrow span {
+    font-size: 14px;
+    line-height: 20px;
+  }
   .header__inner {
     padding: 24px 40px;
   }
@@ -40,13 +44,13 @@
   }
   .video_slider .slider_nav__inner {
     .sni_item {
-      padding: 40px;
+      padding: 0 40px;
       .progress-bar {
         width: 180px;
       }
     }
     .link_block {
-      padding: 32px 40px;
+      padding: 0 40px;
       p {
         font-size: 14px;
         line-height: 20px;
@@ -105,5 +109,18 @@
   }
   .footer__inner .footer_bottom .bottom_logo {
     max-width: 40%;
+  }
+  .contacts_box .cp_item:first-child {
+    width: 60%;
+    margin-right: 32px;
+  }
+  .body_sidebar__sidebar .sidebar_box a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .tile_logos {
+    .tile__item {
+      padding: 20px;
+    }
   }
 }

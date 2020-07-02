@@ -125,6 +125,10 @@ $(document).ready(function() {
         ]
     });
 
+    $("#btn_next").hover(function(){
+        $("#partners").slick('slickPrev')
+    });
+
     $('#video-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -267,3 +271,64 @@ $(document).ready(function() {
         body.addClass('menu-mobile_closed');
     });
 })(jQuery);
+(function($) {
+
+    $(window).on('load resize', function () {
+
+        var mediaCheckMT = window.matchMedia('(max-width: 1199px)');
+        var viewport = document.getElementById('viewport');
+
+        if (mediaCheckMT.matches) {
+            $('.do_accordion').addClass('accordion');
+
+            var Accordion = function(el, multiple) {
+                this.el = el || {};
+                this.multiple = multiple || false;
+
+                // Variable
+                var links = this.el.find('.accordion__btn');
+                // Event
+                links.on('click', {
+                    el: this.el,
+                    multiple: this.multiple
+                }, this.dropdown)
+            };
+
+            Accordion.prototype.dropdown = function(e) {
+                var $el = e.data.el;
+                $this = $(this);
+                $next = $this.next();
+
+                $next.slideToggle(150);
+                $this.parent().toggleClass('accordion__item_open');
+
+                // collapse other accordions
+                if (!e.data.multiple) {
+                    $el.find('.accordion__content').not($next).slideUp().parent().removeClass('accordion__item_open');
+                };
+            };
+
+            var accordion = new Accordion($('.accordion'), false);
+        }
+    });
+})(jQuery);
+(function($) {
+
+    $('.tabs').each( function() {
+
+        $('.tabs__buttons').on('click', '.tabs__btn:not(.tabs__btn_active)', function () {
+            $(this).addClass('tabs__btn_active').siblings().removeClass('tabs__btn_active');
+            $(this).closest('.tabs').find('.tabs__item').removeClass('active').eq($(this).index()).addClass('active');
+        });
+    });
+})(jQuery);
+$(function() {
+    $("div#makeMeScrollable").smoothDivScroll({ autoScroll: "onstart",
+        autoScrollDirection: "backandforth",
+        autoScrollStep: 1,
+        autoScrollInterval: 15,
+        startAtElementId: "startAtMe",
+        visibleHotSpots: "always" });
+    $("#makeMeScrollable").smoothDivScroll("option","autoScrollDirection","endlessloopright");
+
+});

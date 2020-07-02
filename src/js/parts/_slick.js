@@ -43,6 +43,10 @@ $(document).ready(function() {
         ]
     });
 
+    $("#btn_next").hover(function(){
+        $("#partners").slick('slickPrev')
+    });
+
     $('#video-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,

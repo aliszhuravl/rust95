@@ -1,8 +1,9 @@
 .main_item {
-  background-image: url('../img/device.svg');
+  background-image: url('../img/dev.svg');
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
+  background-position: right center;
+  -webkit-background-size: 500px;
+  background-size: 500px;
   height: 620px;
   display: flex;
   align-items: center;
@@ -63,7 +64,7 @@
           align-items: center;
           justify-content: space-between;
             .partners_slider {
-              width: calc(100% - 60px);
+              width: 100%;
                 &__inner {
                   .slick-prev {
                     display: none !important;
@@ -193,8 +194,15 @@
           .sni_item {
             width: 20%;
             position: relative;
-            padding: 80px 60px;
+            padding: 0 60px;
+            height: 168px;
             overflow: hidden;
+            border-right: 1px solid rgba(256, 256, 256, 0.1);
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
               p {
                 @extend .text_20;
                 color: #fff;
@@ -202,7 +210,7 @@
               }
             .progress-bar {
               width: 270px;
-              height: 1px;
+              height: 3px;
               background: rgba(255, 255, 255, 0.2);
               position: relative;
                 .line {
@@ -215,8 +223,9 @@
                   background-color: $color-green-light;
                 }
             }
-            &:hover {
-
+            &:nth-child(4n) {
+              border-right: 0;
+              border-color: transparent;
             }
           }
       }
@@ -225,7 +234,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 80px 60px;
+      padding: 0 60px;
+      height: 168px;
       p {
         font-family: $font-family_Inter-light;
         max-width: 50%;
@@ -239,7 +249,7 @@
 
 .boss_block {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 0 120px;
   margin-bottom: 80px;
@@ -262,7 +272,7 @@
             z-index: 1;
           }
         .inter_16 {
-          margin-bottom: 40px;
+          margin-bottom: 16px;
         }
         .sign_block {
           max-width: 450px;
@@ -277,8 +287,8 @@
               font-family: $font-family_Inter-medium;
             }
             .position {
-              font-size: 12px;
-              line-height: 18px;
+              font-size: 14px;
+              line-height: 20px;
               font-family: $font-family_Inter;
               max-width: 180px;
               color: $color-black-light;
@@ -339,6 +349,8 @@
       p {
         width: 70%;
         font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -1%;
         font-family: $font-family_Inter_medium;
       }
       .arrow_box {

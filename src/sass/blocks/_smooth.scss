@@ -1,0 +1,122 @@
+#makeMeScrollable
+{
+  width:100%;
+  position: relative;
+}
+
+#makeMeScrollable div.scrollableArea *
+{
+  position: relative;
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+    img {
+      margin: 0 80px;
+    }
+}
+
+
+div.scrollingHotSpotLeft
+{
+  min-width: 75px;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+}
+
+div.scrollingHotSpotLeftVisible
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: transparent;
+  padding-left: 40px;
+  .arrow {
+    height: 3px;
+    width: 40px;
+    background-color: $color-black;
+    position: relative;
+    content: '';
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: -4px;
+      width: 12px;
+      height: 12px;
+      border-right: 3px solid $color-black;
+      border-top: 3px solid $color-black;
+      transform: rotate(-135deg);
+    }
+  }
+  &:hover {
+    .arrow {
+      opacity: 1;
+    }
+  }
+}
+
+div.scrollingHotSpotRight
+{
+  min-width: 75px;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+  right: 0;
+}
+
+div.scrollingHotSpotRightVisible
+{
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .arrow {
+    height: 3px;
+    width: 40px;
+    background-color: $color-black;
+    position: relative;
+    content: '';
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    &:after {
+      position: absolute;
+      content: '';
+      right: 0;
+      top: -4px;
+      width: 12px;
+      height: 12px;
+      border-right: 3px solid $color-black;
+      border-top: 3px solid $color-black;
+      transform: rotate(45deg);
+    }
+  }
+  &:hover {
+    .arrow {
+      opacity: 1;
+    }
+  }
+}
+
+div.scrollWrapper
+{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+div.scrollableArea
+{
+  position: relative;
+  width: auto;
+  height: 100%;
+}

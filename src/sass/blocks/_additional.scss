@@ -7,4 +7,288 @@
       margin-bottom: 56px;
     }
   }
+  .tile_25 {
+    border: 0;
+    &__item {
+      border: 1px solid $color-gray-border;
+      margin-right: -1px;
+      margin-bottom: -1px;
+    }
+  }
+}
+
+.page_descr {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  width: 100%;
+    .left {
+      width: 50%;
+      margin-right: 60px;
+    }
+    .right {
+      width: 50%;
+    }
+}
+
+.body_sidebar {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+    &__content {
+      width: 75%;
+      margin-right: 60px;
+        .tile {
+          align-items: stretch;
+          &__item {
+            width: calc(50% - 16px);
+            margin-bottom: 32px;
+            border: 1px solid $color-gray-border;
+            padding: 20px;
+            box-shadow: 0;
+            transition: all 0.3s ease-out;
+              &_text .title {
+                min-height: 140px;
+              }
+              .til_bottom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                  .left {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                      span {
+                        padding: 0 8px;
+                        color: $color-gray-border;
+                      }
+                  }
+              }
+            &:nth-child(2n) {
+              margin-right: 0;
+            }
+              &:nth-child(3n+3) {
+                margin-right: 32px;
+              }
+            &:hover {
+              box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+              .round_link {
+                border-color: $color-gray;
+                span {
+                  background-color: $color-gray;
+                  &:after {
+                    background-color: $color-gray;
+                  }
+                }
+              }
+            }
+          }
+        }
+    }
+    &__sidebar {
+      width: 25%;
+      .sidebar_box {
+        p {
+          margin-bottom: 20px;
+        }
+        a {
+          font-size: 26px;
+          line-height: 24px;
+          font-family: $font-family_Inter;
+        }
+        &__mail {
+          border-top: 1px solid $color-gray-border;
+          padding-top: 20px;
+          margin-bottom: 32px;
+        }
+        &__phone {
+          border-top: 1px solid $color-gray-border;
+          padding-top: 20px;
+        }
+      }
+    }
+}
+
+.tile_sertificates, .tile_logos {
+  .tile__item {
+    border: 1px solid $color-gray-border;
+    margin-bottom: 32px;
+  }
+}
+
+.tile_logos {
+  .tile__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+      &_body {
+        margin-bottom: 0;
+          img {
+            filter: grayscale(100%);
+            transition: all 0.3s ease-out;
+          }
+      }
+    &:hover {
+      .tile__item_body {
+        img {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .page_title {
+    padding: 0 16px;
+  }
+  h1 {
+    font-size: 24px;
+    font-family: $font-family_medium;
+    line-height: 28px;
+  }
+  .breadcrumbs {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    &_list {
+      display: none;
+    }
+    &_link {
+      display: flex;
+        .bc_lick {
+          color: $color-gray;
+          font-size: 11px;
+          font-family: $font-family_Inter;
+          position: relative;
+          padding-left: 10px;
+            &:before {
+              position: absolute;
+              width: 5px;
+              height: 5px;
+              border-top: 1px solid $color-gray;
+              border-left: 1px solid $color-gray;
+              transform: rotate(-45deg);
+              content: '';
+              left: 0;
+              top: 5px;
+            }
+        }
+    }
+  }
+  .show_more {
+    padding: 20px 0;
+    border-bottom: 1px solid $color-gray-border;
+    &__link {
+      background-color: $color-gray-bg;
+      border-radius: 5px;
+        .link {
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0 20px;
+          text-transform: none;
+            .round_link {
+              margin-right: 0;
+            }
+        }
+    }
+  }
+  .film_box {
+    margin-bottom: 40px;
+    .film .film_play img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .page-additional .tile__item {
+    margin-bottom: 32px;
+  }
+  .tile_article {
+    .tile__item {
+      width: 100%;
+      margin-right: 0;
+      .tile__item_text .title {
+        max-width: 100%;
+      }
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .item-updown {
+    display: flex;
+    flex-direction: column-reverse;
+      .page_descr {
+        padding: 0 16px;
+        flex-direction: column;
+        .left, .right {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+  }
+  .tile_boss .tile__item .image {
+    max-width: 100%;
+  }
+  .contacts_box {
+    flex-direction: column;
+    &__left, &__right {
+      width: 100%;
+      margin-right: 0;
+    }
+    &__left {
+      margin-bottom: 40px;
+    }
+    .contacts_phone {
+      flex-direction: column;
+      width: 100%;
+    }
+    .contacts_mail {
+      flex-direction: column;
+      width: 100%;
+    }
+    .cp_item {
+      width: 100%;
+      &:first-child {
+        width: 100%;
+        border-bottom: 1px solid $color-gray-border;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .body_sidebar {
+    flex-direction: column;
+    &__content {
+      width: 100%;
+      .tile__item {
+        width: 100%;
+        margin-right: 0;
+          &:nth-child(3n+3) {
+            margin-right: 0;
+          }
+      }
+    }
+    &__sidebar {
+      width: 100%;
+      background-color: $color-gray-bg;
+        .sidebar_box {
+          padding: 32px 20px;
+          p {
+            margin-bottom: 12px;
+          }
+            &__mail {
+              margin-bottom: 20px;
+            }
+        }
+    }
+  }
 }
