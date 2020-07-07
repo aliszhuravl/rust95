@@ -77,7 +77,7 @@ window.onload = function() {
         });
     }
 
-    smoothScroll( '#link-to-block' );
+    smoothScroll( '.link-to-block' );
 
 })(jQuery);
 $(document).ready(function() {
@@ -129,6 +129,15 @@ $(document).ready(function() {
         $("#partners").slick('slickPrev')
     });
 
+    $('#slider_img').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        pauseOnFocus: false,
+        pauseOnHover: false
+    });
+
     $('#video-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -136,6 +145,8 @@ $(document).ready(function() {
         autoplaySpeed: 5000,
         arrows: false,
         autoplay: true,
+        fade: true,
+        cssEase: 'linear',
         pauseOnFocus: false,
         pauseOnHover: false
     });
@@ -309,6 +320,7 @@ $(document).ready(function() {
             };
 
             var accordion = new Accordion($('.accordion'), false);
+            $('.accordion__item').removeClass('accordion__item_open');
         }
     });
 })(jQuery);
@@ -323,12 +335,53 @@ $(document).ready(function() {
     });
 })(jQuery);
 $(function() {
-    $("div#makeMeScrollable").smoothDivScroll({ autoScroll: "onstart",
+    $("div#makeMeScrollable").smoothDivScroll({ autoScroll: "onstart", speed: 8000,
         autoScrollDirection: "backandforth",
         autoScrollStep: 1,
         autoScrollInterval: 15,
+        scrollInterval: 40,
         startAtElementId: "startAtMe",
+        hotSpotScrollingStep: 500,
         visibleHotSpots: "always" });
     $("#makeMeScrollable").smoothDivScroll("option","autoScrollDirection","endlessloopright");
 
+});
+(function($) {
+
+    $('.sticky').hcSticky({
+        top: 90,
+        bottomEnd: 40,
+        className: 'is-sticky',
+        wrapperClassName: 'wrapper-sticky'
+    });
+
+})(jQuery);
+$('.dropdown').each(function () {
+
+    // Cache the number of options
+    var $dropdown = $(this),
+        $dropdowns = $('.dropdown').not(this),
+        $dropdownText = $dropdown.find('.dropdown__text'),
+        $dropdownList = $dropdown.find('.dropdown__list'),
+        $dropdownListItems = $dropdown.find('.dropdown__item');
+
+    // Show the unordered list when the styled div is clicked (also hides it if the div is clicked again)
+    $dropdown.on('click', function(e) {
+        e.stopPropagation();
+        $dropdowns.removeClass('dropdown_opened');
+        $dropdowns.find('.dropdown__list').slideUp(250);
+
+        if ($dropdown.hasClass('dropdown_opened')) {
+            $dropdown.removeClass('dropdown_opened');
+            $dropdown.find('.dropdown__list').slideUp(250);
+        } else {
+            $dropdown.addClass('dropdown_opened');
+            $dropdown.find('.dropdown__list').slideDown(250);
+        }
+    });
+    // Hides the unordered list when clicking outside of it
+    $(document.body).click( function() {
+        $dropdown.removeClass('dropdown_opened');
+        $dropdownList.slideUp(150);
+    });
 });

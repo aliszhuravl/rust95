@@ -8,3 +8,5 @@
 //= parts/_accordion.js
 //= parts/_tabs.js
 //= parts/_scrollarea.js
+//= parts/_sticky.js
+//= parts/_dropdown.js

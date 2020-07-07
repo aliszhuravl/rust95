@@ -47,6 +47,15 @@ $(document).ready(function() {
         $("#partners").slick('slickPrev')
     });
 
+    $('#slider_img').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        pauseOnFocus: false,
+        pauseOnHover: false
+    });
+
     $('#video-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -54,6 +63,8 @@ $(document).ready(function() {
         autoplaySpeed: 5000,
         arrows: false,
         autoplay: true,
+        fade: true,
+        cssEase: 'linear',
         pauseOnFocus: false,
         pauseOnHover: false
     });

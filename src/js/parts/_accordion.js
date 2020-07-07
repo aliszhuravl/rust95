@@ -36,6 +36,7 @@
             };
 
             var accordion = new Accordion($('.accordion'), false);
+            $('.accordion__item').removeClass('accordion__item_open');
         }
     });
 })(jQuery);

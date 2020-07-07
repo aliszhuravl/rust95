@@ -1,0 +1,22 @@
+.list {
+    padding-left: 20px;
+    list-style-type: none;
+    li {
+      margin-bottom: 12px;
+      position: relative;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      &:before {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #AFB4C8;
+        content: '';
+        margin: 0 16px 0 0;
+        position: absolute;
+        left: -16px;
+        top: 9px;
+      }
+    }
+  }

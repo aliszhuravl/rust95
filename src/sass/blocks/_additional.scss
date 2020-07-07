@@ -29,6 +29,9 @@
     }
     .right {
       width: 50%;
+        .main_16 {
+          color: $color-black-light;
+        }
     }
 }
 
@@ -114,8 +117,18 @@
 
 .tile_sertificates, .tile_logos {
   .tile__item {
+    padding: 56px;
     border: 1px solid $color-gray-border;
     margin-bottom: 32px;
+      &_body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        width: 100%;
+        max-width: 80%;
+      }
   }
 }
 
@@ -142,6 +155,59 @@
   }
 }
 
+.sb_order {
+  .text_14 {
+    .link {
+      font-size: 14px;
+      display: inline-block;
+      line-height: 20px;
+    }
+  }
+}
+
+.sb_order__phone {
+  .btn {
+    margin-top: 32px;
+  }
+}
+
+.tile_films {
+  .tile__item {
+    display: flex;
+    align-items: center;
+      .img {
+        margin-right: 20px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        .play {
+          position: absolute;
+          z-index: 2;
+            img {
+              width: 16px;
+            }
+        }
+      }
+  }
+}
+
+.slider_img {
+  width: 100%;
+  margin-bottom: 40px;
+  &__inner {
+    width: 100%;
+    .slide {
+      margin: 0;
+      padding: 20px;
+      img {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media (max-width: 1199px) {
   .page_title {
     padding: 0 16px;
@@ -149,6 +215,10 @@
   h1 {
     font-size: 24px;
     font-family: $font-family_medium;
+    line-height: 28px;
+  }
+  h2 {
+    font-size: 24px;
     line-height: 28px;
   }
   .breadcrumbs {
@@ -290,5 +360,18 @@
             }
         }
     }
+  }
+  .tile_boss .tile__item .tile__item_text {
+    max-width: 100%;
+  }
+  .text_20 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .page-additional .page_title {
+    margin-bottom: 32px;
+  }
+  .accordion__btn {
+    align-items: center;
   }
 }

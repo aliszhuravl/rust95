@@ -26,7 +26,7 @@
   left: 0;
   width: 16px;
   height: 16px;
-  border: 1px solid $color-gray-50;
+  border: 1px solid $color-gray-border;
   border-radius: 3px;
   background: $color-white;
   transition: all .1s;
@@ -51,8 +51,8 @@
 
 //стили отмеченного чекбокса
 .form__checkbox > input:checked ~ .form__checkbox_indicator {
-  background: $color-blue-50;
-  border-color: $color-blue-50;
+  background: $color-green-light;
+  border-color: $color-green-light;
 
   &:after {
     transform: scale(1) rotate(-45deg);
