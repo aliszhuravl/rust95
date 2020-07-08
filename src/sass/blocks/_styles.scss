@@ -87,12 +87,16 @@
         will-change: transform;
         width: 100%;
         display: block;
-        transform: scale(1.0);
+        //transform: scale(1.0);
+        transform: translate3d(0, 0, 0);
         transition: all 1s ease-out;
       }
         .play {
           position: absolute;
           z-index: 2;
+          img {
+            transform: none;
+          }
         }
     }
 
@@ -101,13 +105,18 @@
         color: $color-gray;
         text-transform: uppercase;
         margin-bottom: 20px;
+        font-size: 12px;
       }
       .title {
         font-size: 20px;
         line-height: 24px;
         font-family: $font-family_semibold;
         max-width: 90%;
-        margin-bottom: 20px;
+        margin-bottom: 12px;
+          span {
+            border-color: transparent;
+            transition: all 0.3s ease-out;
+          }
       }
       .descr {
         color: $color-black-light;
@@ -117,7 +126,21 @@
       .image {
         img {
           width: 100%;
-          transform: scale(1.05);
+          transform: scale(1.03);
+          -webkit-transform: scale(1.03);
+          -moz-transform: scale(1.03);
+          -o-transform: scale(1.03);
+        }
+      }
+      .play {
+        img {
+          transform: none;
+        }
+      }
+      .title {
+        span {
+          border-bottom: 1px solid #AFB4C8;
+          transition: all 0.3s ease-out;
         }
       }
     }
@@ -179,6 +202,9 @@
     }
     &_body {
       margin-bottom: 32px;
+        .inter_16 {
+          color: $color-black;
+        }
     }
     .round_link {
       position: absolute;
@@ -256,7 +282,7 @@
     background-color: #CED2DC;
     position: absolute !important;
     content: '';
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
     &:after {
       position: absolute;
       content: '';
@@ -270,6 +296,7 @@
     }
   }
   &:hover {
+    transition: all 0.4s ease-out;
     .arrow {
       width: 20px;
     }
@@ -322,19 +349,34 @@
               width: 28px;
               height: 28px;
                 span {
-                  width: 9px;
+                  width: 10px;
                     &:after {
-                      height: 9px;
+                      height: 10px;
                       top: -4px;
                       left: 4px;
                     }
                 }
             }
           &:hover {
+            color: $color-black;
             .round_link {
-              border-color: $color-gray;
+              border-color: #AFB4C8;
+                span {
+                  background-color: #AFB4C8;
+                  &:after {
+                    background-color: #AFB4C8;
+                  }
+                }
             }
           }
         }
     }
+}
+
+.gb_animate {
+  opacity: 0;
+}
+
+.gs_animate {
+  opacity: 0;
 }

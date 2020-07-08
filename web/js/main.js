@@ -335,13 +335,12 @@ $(document).ready(function() {
     });
 })(jQuery);
 $(function() {
-    $("div#makeMeScrollable").smoothDivScroll({ autoScroll: "onstart", speed: 8000,
+    $("div#makeMeScrollable").smoothDivScroll({ autoScroll: "always", speed: 8000,
         autoScrollDirection: "backandforth",
         autoScrollStep: 1,
         autoScrollInterval: 15,
-        scrollInterval: 40,
+        scrollInterval: 50,
         startAtElementId: "startAtMe",
-        hotSpotScrollingStep: 500,
         visibleHotSpots: "always" });
     $("#makeMeScrollable").smoothDivScroll("option","autoScrollDirection","endlessloopright");
 
@@ -383,5 +382,15 @@ $('.dropdown').each(function () {
     $(document.body).click( function() {
         $dropdown.removeClass('dropdown_opened');
         $dropdownList.slideUp(150);
+    });
+});
+$(document).ready(function(){
+    $('.gb_animate').viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 400
+    });
+    $('.gs_animate').viewportChecker({
+        classToAdd: 'visible animated fadeIn',
+        offset: 100
     });
 });

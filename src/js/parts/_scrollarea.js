@@ -1,11 +1,10 @@
 $(function() {
-    $("div#makeMeScrollable").smoothDivScroll({ autoScroll: "onstart", speed: 8000,
+    $("div#makeMeScrollable").smoothDivScroll({ autoScroll: "always", speed: 8000,
         autoScrollDirection: "backandforth",
         autoScrollStep: 1,
         autoScrollInterval: 15,
-        scrollInterval: 40,
+        scrollInterval: 50,
         startAtElementId: "startAtMe",
-        hotSpotScrollingStep: 500,
         visibleHotSpots: "always" });
     $("#makeMeScrollable").smoothDivScroll("option","autoScrollDirection","endlessloopright");
 

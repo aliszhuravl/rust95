@@ -1,13 +1,19 @@
 .main_item {
-  background-image: url('../img/dev.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  -webkit-background-size: 500px;
-  background-size: 500px;
+  //background-image: url('../img/dev.svg');
+  //background-repeat: no-repeat;
+  //background-position: right center;
+  //-webkit-background-size: 500px;
+  //background-size: 500px;
   height: 620px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+    .device_desktop {
+      position: absolute;
+      z-index: 2;
+      right: -60px;
+    }
     &__container {
       max-width: 45%;
       .description {
@@ -197,6 +203,7 @@
             padding: 0 60px;
             height: 168px;
             overflow: hidden;
+            cursor: pointer;
             border-right: 1px solid rgba(256, 256, 256, 0.1);
 
             display: flex;
@@ -215,9 +222,9 @@
               position: relative;
                 .line {
                   height: 3px;
-                  width: 1%;
+                  width: 0%;
                   position: absolute;
-                  top: 1px;
+                  top: 0;
                   left: 0;
                   content: '';
                   background-color: $color-green-light;
@@ -236,6 +243,8 @@
       justify-content: space-between;
       padding: 0 60px;
       height: 168px;
+      cursor: pointer;
+      text-decoration: none;
       p {
         font-family: $font-family_Inter-light;
         max-width: 50%;
@@ -328,8 +337,8 @@
         position: absolute;
         right: 50%;
         transform: translateX(50%);
-        width: 150px;
-        height: 150px;
+        width: 177px;
+        height: 177px;
         border-radius: 50%;
         content: '';
         z-index: 0;
@@ -365,8 +374,8 @@
       z-index: 2;
       .img_box {
         &:after {
-          width: 200px;
-          height: 200px;
+          width: 220px;
+          height: 220px;
         }
       }
       .arrow_box {

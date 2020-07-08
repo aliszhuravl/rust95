@@ -10,3 +10,4 @@
 //= parts/_scrollarea.js
 //= parts/_sticky.js
 //= parts/_dropdown.js
+//= parts/_vp-animate.js

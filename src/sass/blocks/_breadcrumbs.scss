@@ -12,14 +12,20 @@
       overflow: hidden;
       margin-bottom: 5px;
       color: #9198A6;
+      &:first-child {
+        a {
+          padding-left: 0;
+        }
+      }
     }
     li a {
       text-decoration: none;
       padding: 0 16px;
       color: #9198A6;
       font-size: 14px;
+      font-family: $font-family_Inter;
       &:hover {
-        color: $color-green-light;
+        color: $color-black;
       }
     }
     li p {

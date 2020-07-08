@@ -24,6 +24,11 @@
     max-width: 1112px;
     margin: 0 auto;
   }
+  .main_item .device_desktop {
+    position: absolute;
+    z-index: 2;
+    right: -240px;
+  }
   .numbers {
     font-size: 56px;
     line-height: 56px;
