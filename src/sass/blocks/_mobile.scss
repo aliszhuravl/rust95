@@ -1,4 +1,12 @@
 @media (max-width: 1199px) {
+  .logo {
+    .link_img {
+      svg {
+        width: 74px;
+        display: block;
+      }
+    }
+  }
     h3 {
       font-size: 16px;
       line-height: 20px;
@@ -478,6 +486,24 @@
   .link_arrow span {
     font-size: 12px;
     line-height: 16px;
+  }
+  .plus_link .link .round_link {
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+      span {
+        width: 7px;
+        height: 1px;
+        &:after {
+          top: -3px;
+          left: 3px;
+          height: 7px;
+          width: 1px;
+        }
+      }
+  }
+  .plus_link .link p {
+    font-size: 11px;
   }
 }
 

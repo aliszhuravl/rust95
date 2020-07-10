@@ -29,6 +29,9 @@
     z-index: 2;
     right: -240px;
   }
+  .main_item {
+    background-position: 120% center;
+  }
   .numbers {
     font-size: 56px;
     line-height: 56px;
@@ -118,7 +121,7 @@
     font-size: 14px;
   }
   .footer {
-    padding: 40px 60px;
+    padding: 0 40px;
   }
   .footer__inner .footer_bottom .bottom_logo {
     max-width: 40%;

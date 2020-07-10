@@ -32,36 +32,37 @@
   .tabs__content {
     background-color: $color-gray-bg;
     padding: 40px;
-      .form_name {
-        margin-bottom: 10px;
-      }
-      .files {
-        margin-bottom: 40px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 32px;
-        border: 1px dashed $color-gray;
-        border-radius: 5px;
-        font-size: 16px;
-        color: $color-black-light;
-      }
-      .form__textarea {
-        margin-bottom: 32px;
-      }
-      .form__item {
-        margin-bottom: 32px;
-      }
-      .inline-label {
-        margin-bottom: 32px;
-          .text_14 {
-            .link {
-              font-family: $font-family_Inter;
-              font-size: 14px;
-              line-height: 20px;
-            }
-          }
-      }
+  }
+}
+
+.form_name {
+  margin-bottom: 10px;
+}
+.files {
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border: 1px dashed $color-gray;
+  border-radius: 5px;
+  font-size: 16px;
+  color: $color-black-light;
+}
+.form__textarea {
+  margin-bottom: 32px;
+}
+.form__item {
+  margin-bottom: 32px;
+}
+.inline-label {
+  margin-bottom: 32px;
+  .text_14 {
+    .link {
+      font-family: $font-family_Inter;
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }

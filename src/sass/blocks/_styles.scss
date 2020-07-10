@@ -175,6 +175,7 @@
 
 .tile_boss {
   .tile__item {
+    cursor: default;
     .image {
       max-width: 280px;
     }
@@ -274,6 +275,8 @@
   position: relative;
   display: flex;
   align-items: center;
+  color: $color-black;
+  text-decoration: none;
   .arrow {
     margin-left: 12px;
     left: 100%;
@@ -282,6 +285,7 @@
     background-color: #CED2DC;
     position: absolute !important;
     content: '';
+    will-change: width;
     transition: all 0.4s ease-out;
     &:after {
       position: absolute;
@@ -379,4 +383,48 @@
 
 .gs_animate {
   opacity: 0;
+}
+
+.tile_category {
+  flex-direction: column;
+  width: 100%;
+    .tile__item {
+      border: 1px solid $color-gray-border;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 0 !important;
+      padding: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      box-shadow: 0;
+      transition: all 0.4s ease-out;
+      margin-top: -1px;
+        .left {
+          margin-right: 40px;
+        }
+        .right {
+          .charact {
+            width: 100%;
+            margin-bottom: 0;
+              &__item {
+                display: flex;
+                align-items: center;
+                padding: 16px 0;
+                .text {
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                    p {
+                      margin-bottom: 0;
+                    }
+                }
+              }
+          }
+        }
+      &:hover {
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+      }
+    }
 }

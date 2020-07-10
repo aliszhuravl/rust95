@@ -53,7 +53,18 @@ $(document).ready(function() {
         arrows: false,
         centerMode: true,
         pauseOnFocus: false,
-        pauseOnHover: false
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 640,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    centerMode: true,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
     $('#video-slider').slick({
