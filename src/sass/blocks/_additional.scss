@@ -33,6 +33,9 @@
           color: $color-black-light;
         }
     }
+  .one-item {
+    max-width: 60%;
+  }
 }
 
 .body_sidebar {
@@ -260,6 +263,11 @@
       background-position: 96% center;
       background-repeat: no-repeat;
     }
+    button {
+      &:first-child {
+        margin-bottom: 32px;
+      }
+    }
 }
 
 .photogallery {
@@ -268,6 +276,38 @@
 
 .order_mobile {
   display: none;
+}
+
+.page_img {
+  width: 100%;
+  display: flex;
+  margin-bottom: 60px;
+    img {
+      width: 100%;
+    }
+}
+
+.tile_tech {
+  width: 100%;
+  .tile__item {
+    margin-right: 56px;
+    width: calc(33.333% - 38px);
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+    &_top {
+      border-bottom: 1px solid $color-gray-border;
+      margin-bottom: 20px;
+    }
+    &_body {
+      .text_18 {
+        margin-bottom: 16px;
+      }
+      .main_16 {
+        color: $color-black-light;
+      }
+    }
+  }
 }
 
 @media (max-width: 1199px) {

@@ -1,0 +1,23 @@
+<svg width="118" height="124" viewBox="0 0 118 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="106.5" y="55.5" width="11" height="3" fill="white" stroke="#AFB4C8"/>
+<rect x="57.5" y="11.5" width="11" height="3" transform="rotate(-90 57.5 11.5)" fill="white" stroke="#AFB4C8"/>
+<rect x="0.5" y="55.5" width="11" height="3" fill="white" stroke="#AFB4C8"/>
+<path d="M30.5 118.5V94.5L33.5 95V115.5H47.5V118.5H30.5Z" fill="white" stroke="#AFB4C8"/>
+<path d="M89 118.5V94.5L86 95V115.5H72V118.5H89Z" fill="white" stroke="#AFB4C8"/>
+<circle cx="59" cy="56" r="49.5" fill="white" stroke="#AFB4C8"/>
+<circle cx="59" cy="56" r="41.5" fill="white" stroke="#AFB4C8"/>
+<circle cx="59" cy="56" r="34.5" fill="#F6F6F6" stroke="#AFB4C8"/>
+<circle cx="59" cy="56" r="21.5" fill="#F6F6F6" stroke="#AFB4C8"/>
+<rect x="57.5" y="26.5" width="3" height="59" fill="white" stroke="#AFB4C8"/>
+<rect x="32.7025" y="42.549" width="3" height="59" transform="rotate(-60 32.7025 42.549)" fill="white" stroke="#AFB4C8"/>
+<rect x="0.683013" y="0.183013" width="3" height="59" transform="matrix(0.5 0.866025 0.866025 -0.5 32.2025 68.951)" fill="white" stroke="#AFB4C8"/>
+<circle cx="59" cy="56" r="17.5" fill="white" stroke="#AFB4C8"/>
+<circle cx="59" cy="56" r="13.5" fill="white" stroke="#AFB4C8"/>
+<circle cx="59" cy="47" r="1.5" fill="white" stroke="#AFB4C8"/>
+<circle cx="51" cy="51" r="1.5" fill="white" stroke="#AFB4C8"/>
+<circle cx="67" cy="51" r="1.5" fill="white" stroke="#AFB4C8"/>
+<circle r="1.5" transform="matrix(1 0 0 -1 59 65)" fill="white" stroke="#AFB4C8"/>
+<circle r="1.5" transform="matrix(1 0 0 -1 51 60)" fill="white" stroke="#AFB4C8"/>
+<circle r="1.5" transform="matrix(1 0 0 -1 67 60)" fill="white" stroke="#AFB4C8"/>
+<rect x="17.5" y="118.5" width="83" height="5" fill="white" stroke="#AFB4C8"/>
+</svg>

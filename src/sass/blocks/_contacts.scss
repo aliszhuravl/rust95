@@ -6,12 +6,15 @@
     .text_14 {
       margin-bottom: 20px;
     }
-  .plus_link {
+    .plus_link {
     margin-bottom: 20px;
-  }
-  .caps_mini {
+      .link p {
+        font-size: 14px;
+      }
+    }
+    .caps_mini {
     margin-bottom: 12px;
-  }
+    }
     &__left {
       border-top: 1px solid $color-black-light;
       width: 50%;
@@ -19,18 +22,33 @@
       padding: 20px 0;
       .contacts_phone, .contacts_mail {
         flex-direction: column;
+        a {
+          font-size: 18px;
+        }
+      }
+      h3 {
+        margin-bottom: 20px;
       }
     }
     &__right {
       border-top: 1px solid $color-black-light;
       width: 50%;
       padding: 20px 0;
+      h3 {
+        margin-bottom: 20px;
+      }
     }
     .contacts_phone {
       width: 100%;
       border-top: 1px solid $color-gray-border;
       border-bottom: 1px solid $color-gray-border;
       padding: 20px 0;
+      span {
+        font-size: 18px;
+      }
+      a {
+        font-size: 18px;
+      }
 
       display: flex;
       justify-content: flex-start;
@@ -41,6 +59,10 @@
 
       display: flex;
       justify-content: flex-start;
+
+      a {
+        font-size: 18px;
+      }
     }
     .cp_item {
       &:first-child {

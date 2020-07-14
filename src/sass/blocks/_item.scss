@@ -86,10 +86,17 @@
       padding: 5px;
       color: $color-gray;
       margin-right: 20px;
+        .ch {
+          font-family: $font-family_medium;
+          font-size: 12px;
+        }
     }
     .text {
       .text_14 {
         margin-bottom: 6px;
+      }
+      .main_16 {
+        color: $color-black-light;
         span {
           color: $color-gray;
         }
@@ -123,9 +130,11 @@
                   border-bottom: 1px solid $color-gray-border;
                   transition: all 0.3s ease-out;
                   cursor: pointer;
+
+                  position: relative;
                     .link {
                       font-size: 16px;
-                      font-family: $font-family;
+                      font-family: $font-family-medium;
                       color: $color-black-light;
                       line-height: 24px;
                       width: 100%;
@@ -133,9 +142,21 @@
                           color: $color-black;
                         }
                     }
-                    &:hover {
-                      border-color: $color-green;
-                    }
+                  &:after {
+                    width: 0;
+                    height: 1px;
+                    background-color: $color-green;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    content: '';
+                    transition: all 0.3s ease-out;
+                  }
+                  &:hover {
+                      &:after {
+                        width: 100%;
+                      }
+                  }
                 }
             }
           }

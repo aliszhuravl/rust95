@@ -1,0 +1,48 @@
+<svg width="110" height="167" viewBox="0 0 110 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M37.2837 32.8003L35.5294 63.5H74.4706L72.7163 32.8003C72.6105 30.9479 71.0775 29.5 69.222 29.5H40.778C38.9225 29.5 37.3895 30.9479 37.2837 32.8003Z" fill="white" stroke="#AFB4C8"/>
+<rect x="29.5" y="65.5" width="51" height="42" fill="white" stroke="#AFB4C8"/>
+<rect x="0.5" y="-0.5" width="59" height="3" transform="matrix(1 0 0 -1 25 65)" fill="white" stroke="#AFB4C8"/>
+<circle cx="55" cy="79" r="22.5" fill="white" stroke="#AFB4C8"/>
+<circle cx="55" cy="79" r="19.5" fill="white" stroke="#AFB4C8"/>
+<path d="M42.2664 84.94L42.5327 85.4918L64.3204 75.6556L63.5213 74.0001L42.2664 84.94Z" fill="#AFB4C8"/>
+<circle cx="55" cy="79" r="2.5" fill="white" stroke="#AFB4C8"/>
+<circle cx="55" cy="79" r="0.5" fill="white" stroke="#AFB4C8"/>
+<circle cx="51.5" cy="91.5" r="2" fill="white" stroke="#AFB4C8"/>
+<circle cx="58.5" cy="91.5" r="2" fill="white" stroke="#AFB4C8"/>
+<rect x="51" y="71" width="8" height="1" fill="#AFB4C8"/>
+<rect x="51" y="69" width="8" height="1" fill="#AFB4C8"/>
+<rect x="80.5" y="77.5" width="5" height="13" fill="white" stroke="#AFB4C8"/>
+<rect x="80.5" y="81.5" width="5" height="5" fill="white" stroke="#AFB4C8"/>
+<rect x="91.5" y="79.5" width="7" height="9" fill="white" stroke="#AFB4C8"/>
+<rect x="85.5" y="80.5" width="6" height="7" fill="white" stroke="#AFB4C8"/>
+<path d="M94.5 79C94.5 78.1716 95.1716 77.5 96 77.5H109C109.276 77.5 109.5 77.7239 109.5 78V90C109.5 90.2761 109.276 90.5 109 90.5H96C95.1716 90.5 94.5 89.8284 94.5 89V79Z" fill="white" stroke="#AFB4C8"/>
+<path d="M95 83.5H109" stroke="#AFB4C8"/>
+<rect x="-0.5" y="0.5" width="5" height="13" transform="matrix(-1 0 0 1 29 77)" fill="white" stroke="#AFB4C8"/>
+<rect x="-0.5" y="0.5" width="5" height="5" transform="matrix(-1 0 0 1 29 81)" fill="white" stroke="#AFB4C8"/>
+<rect x="-0.5" y="0.5" width="7" height="9" transform="matrix(-1 0 0 1 18 79)" fill="white" stroke="#AFB4C8"/>
+<rect x="18.5" y="80.5" width="6" height="7" fill="white" stroke="#AFB4C8"/>
+<path d="M15.5 79C15.5 78.1716 14.8284 77.5 14 77.5H1C0.723857 77.5 0.5 77.7239 0.5 78V90C0.5 90.2761 0.723858 90.5 1 90.5H14C14.8284 90.5 15.5 89.8284 15.5 89V79Z" fill="white" stroke="#AFB4C8"/>
+<path d="M15 83.5H1" stroke="#AFB4C8"/>
+<path d="M37.2999 150.187L35.5213 107.5H74.4787L72.7001 150.187C72.5997 152.598 70.6164 154.5 68.204 154.5H41.796C39.3836 154.5 37.4003 152.598 37.2999 150.187Z" fill="white" stroke="#AFB4C8"/>
+<rect x="32.5" y="107.5" width="8" height="4" fill="white" stroke="#AFB4C8"/>
+<rect x="34.5" y="107.5" width="4" height="4" fill="white" stroke="#AFB4C8"/>
+<rect x="34.5" y="111.5" width="4" height="2" fill="white" stroke="#AFB4C8"/>
+<rect x="69.5" y="107.5" width="8" height="4" fill="white" stroke="#AFB4C8"/>
+<rect x="71.5" y="107.5" width="4" height="4" fill="white" stroke="#AFB4C8"/>
+<rect x="71.5" y="111.5" width="4" height="2" fill="white" stroke="#AFB4C8"/>
+<path d="M66 107.5H80.5V104.5H29.5V107.5H44H44.5V108V110C44.5 110.276 44.7239 110.5 45 110.5H65C65.2761 110.5 65.5 110.276 65.5 110V108V107.5H66Z" fill="white" stroke="#AFB4C8"/>
+<path d="M61.45 154.5C61.2184 155.641 60.2095 156.5 59 156.5H51C49.7905 156.5 48.7816 155.641 48.55 154.5H61.45Z" fill="white" stroke="#AFB4C8"/>
+<path d="M46.5 116V149" stroke="#AFB4C8" stroke-linecap="round"/>
+<path d="M63.5 116V149" stroke="#AFB4C8" stroke-linecap="round"/>
+<path d="M40.5 29C40.5 28.1716 41.1716 27.5 42 27.5H68C68.8284 27.5 69.5 28.1716 69.5 29V29.5H40.5V29Z" fill="white" stroke="#AFB4C8"/>
+<path d="M41.5 19C41.5 18.1716 42.1716 17.5 43 17.5H67C67.8284 17.5 68.5 18.1716 68.5 19V27.5H41.5V19Z" fill="white" stroke="#AFB4C8"/>
+<path d="M43.5 21C43.5 20.1716 44.1716 19.5 45 19.5H51C51.8284 19.5 52.5 20.1716 52.5 21V27.5H43.5V21Z" fill="white" stroke="#AFB4C8"/>
+<path d="M57.5 21C57.5 20.1716 58.1716 19.5 59 19.5H65C65.8284 19.5 66.5 20.1716 66.5 21V27.5H57.5V21Z" fill="white" stroke="#AFB4C8"/>
+<path d="M44.5 7C44.5 3.41015 47.4101 0.5 51 0.5H59C62.5899 0.5 65.5 3.41015 65.5 7V17.5H44.5V7Z" fill="white" stroke="#AFB4C8"/>
+<rect x="45.5" y="37.5" width="19" height="13" fill="white" stroke="#AFB4C8"/>
+<path d="M50 42.5H59.5" stroke="#AFB4C8"/>
+<path d="M50 45.5H59.5" stroke="#AFB4C8"/>
+<rect x="48.5" y="161.5" width="13" height="5" fill="white" stroke="#AFB4C8"/>
+<rect x="51.5" y="156.5" width="7" height="2" fill="white" stroke="#AFB4C8"/>
+<rect x="52.5" y="158.5" width="5" height="3" fill="white" stroke="#AFB4C8"/>
+</svg>

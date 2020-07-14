@@ -35,6 +35,49 @@
   color: $color-green;
 }
 
+.link_post {
+  position: relative;
+  width: fit-content;
+  &:after {
+    width: 0;
+    height: 1px;
+    background-color: $color-green-light;
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+
+    transition: all 0.3s ease-out;
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.link_phone {
+  position: relative;
+  width: fit-content;
+  &:after {
+    width: 0;
+    height: 1px;
+    background-color: $color-gray-light;
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+
+    transition: all 0.3s ease-out;
+  }
+  &:hover {
+    color: $color-black;
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
 .link_light {
   color: $color-blue-10;
 
