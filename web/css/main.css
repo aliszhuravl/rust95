@@ -4885,6 +4885,10 @@ h1 {
 	padding: 20px;
 }
 
+.contacts_box .contacts_phone a {
+	font-size: 16px;
+}
+
 }
 
 @media (max-width: 1199px) {
