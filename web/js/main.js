@@ -13,7 +13,7 @@
         var viewport = document.getElementById('viewport');
 
         if (mediaCheckMobile.matches) {
-            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+            viewport.setAttribute('content', 'initial-scale=1.0');
         } else if (mediaCheckTablet.matches) {
             viewport.setAttribute('content', 'width=device-width');
         } else if (mediaCheckDesktop.matches) {
@@ -404,4 +404,27 @@ $(document).ready(function(){
         classToAdd: 'visible animated fadeIn',
         offset: 100
     });
+});
+
+$(document).ready(function() {
+    $("#popup").click(function () {
+        $(".popm").addClass('visible_popup');
+        $("body").addClass('stop');
+    });
+
+    $("#cross-pop").click(function () {
+        $(".popup_wrapper").removeClass('visible_popup');
+        $("body").removeClass('stop');
+    });
+
+    $("#vacancy").click(function () {
+        $(".pop-v").addClass('visible_popup');
+        $("body").addClass('stop');
+    });
+
+    $("#cross-pop").click(function () {
+        $(".popup_wrapper").removeClass('visible_popup');
+        $("body").removeClass('stop');
+    });
+
 });

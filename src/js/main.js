@@ -11,3 +11,4 @@
 //= parts/_sticky.js
 //= parts/_dropdown.js
 //= parts/_vp-animate.js
+//= parts/_popup.js

@@ -311,6 +311,35 @@
 }
 
 @media (max-width: 1199px) {
+  .popup {
+    width: 100%;
+    top: 0;
+      &_inner {
+        padding: 20px;
+        .pop_body {
+          flex-direction: column;
+            .left {
+              width: 100%;
+              margin-right: 0;
+              margin-bottom: 32px;
+            }
+            .right {
+              width: 100%;
+              margin-right: 0;
+            }
+        }
+      }
+      .closepop {
+        right: 20px;
+        top: 20px;
+         .round_link span {
+           background-color: $color-gray-light;
+            &:after {
+              background-color: $color-gray-light;
+            }
+         }
+      }
+  }
   .order_info {
     background-color: transparent !important;
     .sidebar_box__mail {
