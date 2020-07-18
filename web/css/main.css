@@ -4650,12 +4650,14 @@ ol li::before {
 .popup {
 	position: absolute;
 	z-index: 5;
-	top: 50%;
+	top: 5%;
 	right: 50%;
 	width: auto;
 	max-width: 768px;
-	-webkit-transform: translate(50%, -50%);
-	transform: translate(50%, -50%);
+	height: inherit;
+	margin: 20px 0;
+	-webkit-transform: translateX(50%);
+	transform: translateX(50%);
 	background-color: #fff;
 }
 

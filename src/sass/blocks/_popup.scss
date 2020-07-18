@@ -17,11 +17,13 @@
   width: auto;
   background-color: $color-white;
   position: absolute;
-  transform: translate(50%, -50%);
+  transform: translateX(50%);
   right: 50%;
-  top: 50%;
+  top: 5%;
   z-index: 5;
   max-width: 768px;
+  height: inherit;
+  margin: 20px 0;
     &_inner {
       width: 100%;
       padding: 40px;
