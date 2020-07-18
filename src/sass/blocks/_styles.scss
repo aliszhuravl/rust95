@@ -428,3 +428,24 @@
       }
     }
 }
+
+.green_block {
+  .btn_green:first-child {
+    background-color: $color-green-light;
+    border-color: $color-green-light;
+  }
+}
+
+.all_pages_list {
+  padding: 56px 0;
+  li {
+    margin-bottom: 12px;
+    font-size: 24px;
+    a {
+      font-size: 24px;
+        &:hover {
+          color: $color-black;
+        }
+    }
+  }
+}

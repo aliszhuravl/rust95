@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-    $("#popup").click(function () {
+    $(".call_popup").click(function () {
         $(".popm").addClass('visible_popup');
         $("body").addClass('stop');
     });

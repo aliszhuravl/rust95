@@ -1,0 +1,136 @@
+.article {
+  h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  h4 {
+    font-family: $font-family_Inter-medium;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black-light;
+    margin-bottom: 20px;
+  }
+  .main_img {
+    width: 100%;
+    margin-bottom: 56px;
+      img {
+        width: 100%;
+      }
+  }
+  .list {
+    margin-bottom: 24px;
+    li {
+      color: $color-black-light;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .highlited {
+    font-family: $font-family_medium;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 56px 0;
+    span {
+      color: $color-green;
+    }
+  }
+  .image_box {
+    width: 100%;
+    margin: 56px 0;
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .caps_mini {
+    font-size: 12px;
+    color: $color-gray;
+  }
+}
+
+.article_box {
+  align-items: stretch;
+}
+
+.article_content {
+  margin-right: 80px;
+}
+
+@media (max-width: 1600px) {
+  .article_box {
+    .sb__body {
+      .text_20 {
+        font-size: 18px;
+      }
+      .text_14 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .article_content .page_title {
+    padding: 0;
+  }
+  .article {
+    h1 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    h2 {
+      font-size: 20px;
+      line-height: 28px;
+      margin-top: 32px;
+      margin-bottom: 20px;
+    }
+    h4 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+    .main_img {
+      margin-bottom: 40px;
+    }
+    .list li {
+      font-size: 14px;
+    }
+    .highlited {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 40px 0;
+    }
+    .image_box {
+      margin: 40px 0;
+        img {
+          margin-bottom:12px;
+        }
+    }
+  }
+  .article_box {
+    .body_sidebar__sidebar {
+      padding-top: 32px;
+        .sb_title {
+          padding: 0 16px;
+          padding-bottom: 12px;
+        }
+        .sidebar_box {
+          padding: 20px;
+        }
+        .sidebar_box__item:last-child {
+          border: 0;
+          margin-bottom: 0;
+        }
+    }
+  }
+}

@@ -96,6 +96,11 @@
     }
     &__sidebar {
       width: 25%;
+      .sb_title {
+        padding-bottom: 12px;
+        border-bottom: 1px solid $color-gray-border;
+        margin-bottom: 12px;
+      }
       .sidebar_box {
         p {
           margin-bottom: 20px;
@@ -113,6 +118,28 @@
         &__phone {
           border-top: 1px solid $color-gray-border;
           padding-top: 20px;
+        }
+        &__item {
+          padding-bottom: 12px;
+          border-bottom: 1px solid $color-gray-border;
+          margin-bottom: 20px;
+            .text_20 {
+              color: $color-black;
+              text-decoration: none;
+              font-size: 20px;
+              margin-bottom: 12px;
+              font-family: $font-family_medium;
+                span {
+                  border-color: transparent;
+                  transition: all 0.3s ease-out;
+                }
+                &:hover {
+                  span {
+                    border-bottom: 1px solid #AFB4C8;
+                    transition: all 0.3s ease-out;
+                  }
+                }
+            }
         }
       }
     }
@@ -298,6 +325,17 @@
     &_top {
       border-bottom: 1px solid $color-gray-border;
       margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-bottom: 12px;
+      height: 40px;
+        .img {
+          margin-right: 12px;
+            img {
+              display: block;
+            }
+        }
     }
     &_body {
       .text_18 {
@@ -590,5 +628,18 @@
           display: none;
         }
     }
+  }
+  .page_descr .one-item {
+    max-width: 100%;
+      .text_20 {
+        margin-bottom: 0;
+      }
+  }
+  .page_img {
+    margin-bottom: 32px;
+  }
+  .tile_tech .tile__item {
+    width: 100%;
+    margin-right: 0;
   }
 }

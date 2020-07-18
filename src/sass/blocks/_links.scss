@@ -77,35 +77,3 @@
     }
   }
 }
-
-.link_light {
-  color: $color-blue-10;
-
-  &:hover {
-    color: $color-blue-50;
-  }
-}
-
-.link_dark {
-  color: $font-color_dark;
-
-  &:hover {
-    color: $color-blue-50;
-  }
-}
-
-.link_blue {
-  color: $color-blue-50;
-  
-  &:hover {
-    color: $color-blue-60;
-  }
-}
-
-.link_underlined {
-  text-decoration: underline;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
