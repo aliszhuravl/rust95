@@ -117,6 +117,10 @@
         .side_menu {
           height: 100%;
           &__inner {
+            height: calc(100vh - 180px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             ul {
               list-style-type: none;
               padding: 0;
@@ -148,7 +152,7 @@
                     background-color: $color-green;
                     position: absolute;
                     left: 0;
-                    bottom: 0;
+                    bottom: -1px;
                     content: '';
                     transition: all 0.3s ease-out;
                   }
@@ -431,6 +435,7 @@
         .doc {
           span {
             color: $color-gray;
+            white-space: nowrap;
           }
         }
       }
@@ -451,7 +456,7 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 640px) {
   .item_main {
     margin-bottom: 40px;
     flex-direction: column;

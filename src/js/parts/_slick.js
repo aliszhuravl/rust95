@@ -54,6 +54,8 @@ $(document).ready(function() {
         centerMode: true,
         pauseOnFocus: false,
         pauseOnHover: false,
+        autoplaySpeed: 2000,
+        autoplay: true,
         responsive: [
             {
                 breakpoint: 640,

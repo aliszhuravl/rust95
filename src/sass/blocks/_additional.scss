@@ -156,8 +156,7 @@
         justify-content: center;
       }
       img {
-        width: 100%;
-        max-width: 80%;
+        width: auto;
       }
   }
 }
@@ -181,6 +180,8 @@
           img {
             filter: grayscale(100%);
             transition: all 0.3s ease-out;
+            width: 176px;
+            height: 115px;
           }
       }
     &:hover {
@@ -224,9 +225,47 @@
           z-index: 2;
             img {
               width: 16px;
+              display: block;
             }
         }
       }
+  }
+}
+
+.films_mini {
+  .tile__item {
+    .img {
+      overflow: hidden;
+      width: 80px;
+      min-width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      img {
+        will-change: transform;
+        width: 100%;
+        display: block;
+        transform: translate3d(0, 0, 0);
+        transition: all 1s ease-out;
+      }
+    }
+
+    &:hover {
+      .img {
+        img {
+          display: block;
+          width: 100%;
+          transform: scale(1.03);
+          -webkit-transform: scale(1.05);
+          -moz-transform: scale(1.05);
+          -o-transform: scale(1.05);
+        }
+        .play {
+          img {
+            transform: none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -279,7 +318,7 @@
 
 
 .after_box {
-  margin-top: 50px;
+  margin-top: 80px;
   max-width: 80%;
     .form__item {
       width: 100%;
@@ -291,8 +330,9 @@
       background-repeat: no-repeat;
     }
     button {
+      font-size: 14px;
       &:first-child {
-        margin-bottom: 32px;
+        margin-bottom: 20px;
       }
     }
 }
@@ -348,7 +388,7 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 640px) {
   .popup {
     width: 100%;
     top: 0;

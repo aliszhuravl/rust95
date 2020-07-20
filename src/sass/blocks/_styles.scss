@@ -114,7 +114,7 @@
         max-width: 90%;
         margin-bottom: 12px;
           span {
-            border-color: transparent;
+            //border-color: transparent;
             transition: all 0.3s ease-out;
           }
       }
@@ -137,12 +137,12 @@
           transform: none;
         }
       }
-      .title {
-        span {
-          border-bottom: 1px solid #AFB4C8;
-          transition: all 0.3s ease-out;
-        }
-      }
+      //.title {
+      //  span {
+      //    border-bottom: 1px solid #AFB4C8;
+      //    transition: all 0.3s ease-out;
+      //  }
+      //}
     }
   }
 }
@@ -151,6 +151,7 @@
   .tile__item {
     width: calc(50% - 22px);
     margin-right: 32px;
+    position: relative;
 
     border-top: 1px solid $color-gray-border;
 
@@ -169,6 +170,22 @@
     }
     &:nth-child(2n) {
       margin-right: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background-color: #AFB4C8;
+      transition: all 0.3s ease-out;
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+        transition: all 0.3s ease-out;
+      }
     }
   }
 }
@@ -433,6 +450,12 @@
   .btn_green:first-child {
     background-color: $color-green-light;
     border-color: $color-green-light;
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: #2EAB6F;
+      background-color: #2EAB6F;
+    }
   }
 }
 

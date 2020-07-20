@@ -13,9 +13,9 @@
         var viewport = document.getElementById('viewport');
 
         if (mediaCheckMobile.matches) {
-            viewport.setAttribute('content', 'initial-scale=1.0');
+            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
         } else if (mediaCheckTablet.matches) {
-            viewport.setAttribute('content', 'width=device-width');
+            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
         } else if (mediaCheckDesktop.matches) {
             viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
         }
