@@ -223,6 +223,7 @@
         .img_box {
           min-height: 150px;
           margin-bottom: 40px;
+          height: 150px;
           img {
             position: relative;
             z-index: 1;
@@ -463,8 +464,11 @@
     }
     .mobile_img {
       display: block;
+      width: 100%;
+      text-align: center;
       img {
         margin-bottom: 40px;
+        width: 100%;
       }
     }
     .inter_16 {

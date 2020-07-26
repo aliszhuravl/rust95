@@ -30,9 +30,9 @@
                 $this.parent().toggleClass('accordion__item_open');
 
                 // collapse other accordions
-                if (!e.data.multiple) {
-                    $el.find('.accordion__content').not($next).slideUp().parent().removeClass('accordion__item_open');
-                };
+                // if (!e.data.multiple) {
+                //     $el.find('.accordion__content').not($next).slideUp().parent().removeClass('accordion__item_open');
+                // };
             };
 
             var accordion = new Accordion($('.accordion'), false);

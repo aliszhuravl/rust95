@@ -327,9 +327,9 @@ $(document).ready(function() {
                 $this.parent().toggleClass('accordion__item_open');
 
                 // collapse other accordions
-                if (!e.data.multiple) {
-                    $el.find('.accordion__content').not($next).slideUp().parent().removeClass('accordion__item_open');
-                };
+                // if (!e.data.multiple) {
+                //     $el.find('.accordion__content').not($next).slideUp().parent().removeClass('accordion__item_open');
+                // };
             };
 
             var accordion = new Accordion($('.accordion'), false);
@@ -400,7 +400,7 @@ $('.dropdown').each(function () {
 $(document).ready(function(){
     $('.gb_animate').viewportChecker({
         classToAdd: 'visible animated fadeIn',
-        offset: 400
+        offset: 250
     });
     $('.gs_animate').viewportChecker({
         classToAdd: 'visible animated fadeIn',
