@@ -1449,7 +1449,7 @@ h3 {
 
 .tile_article .tile__item:after {
 	position: absolute;
-	top: 0;
+	top: -1px;
 	left: 0;
 	width: 0;
 	height: 1px;
