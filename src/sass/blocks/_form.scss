@@ -11,9 +11,11 @@
   color: $font-color_dark;
   border: 1px solid $color-gray-border;
   height: 56px;
+  outline: none;
   &:focus {
     outline: 0;
-    border-color: $color-green-light;
+    border: 1px solid $color-green-light;
+
   }
 
   &[disabled] {
@@ -41,6 +43,7 @@
   font-size: $font_default;
   resize: none;
   box-shadow: none;
+  outline: none;
 
   &:focus {
     outline: 0;
@@ -68,4 +71,12 @@
     outline: 0;
     border-color: transparent;
   }
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }

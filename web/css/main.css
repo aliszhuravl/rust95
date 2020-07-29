@@ -881,12 +881,13 @@ h3 {
 	color: #2e3033;
 	border: 1px solid #e2e4ea;
 	border-radius: 5px;
+	outline: none;
 	background-color: #fff;
 	box-shadow: none;
 }
 
 .form__item:focus {
-	border-color: #44bb82;
+	border: 1px solid #44bb82;
 	outline: 0;
 }
 
@@ -926,6 +927,7 @@ h3 {
 	resize: none;
 	border: 1px solid #e2e4ea;
 	border-radius: 5px;
+	outline: none;
 	background-color: #fff;
 	box-shadow: none;
 }
@@ -969,6 +971,14 @@ h3 {
 .form__textarea_custom:focus {
 	border-color: transparent;
 	outline: 0;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 /* fuck ie */
@@ -1471,8 +1481,18 @@ h3 {
 	max-width: 280px;
 }
 
+.tile_boss .tile__item .image img {
+	-webkit-transform: none;
+	transform: none;
+}
+
 .tile_boss .tile__item .tile__item_text {
 	max-width: 280px;
+}
+
+.tile_boss .tile__item:hover img {
+	-webkit-transform: none;
+	transform: none;
 }
 
 .tile_4 .tile__item {
@@ -2845,7 +2865,10 @@ h3 {
 
 .tile_logos .tile__item_body img {
 	width: 176px;
+	max-width: 176px;
 	height: 115px;
+	max-height: 115px;
+	margin-bottom: 0;
 	transition: all .3s ease-out;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
@@ -2864,6 +2887,7 @@ h3 {
 }
 
 .sb_order__phone .btn {
+	font-size: 14px;
 	margin-top: 32px;
 }
 
@@ -2907,6 +2931,13 @@ h3 {
 	will-change: transform;
 }
 
+.films_mini .tile__item .img .play img {
+	width: 16px;
+	transition: none;
+	-webkit-transform: none;
+	transform: none;
+}
+
 .films_mini .tile__item:hover .img img {
 	display: block;
 	width: 100%;
@@ -2917,6 +2948,7 @@ h3 {
 }
 
 .films_mini .tile__item:hover .img .play img {
+	width: 16px;
 	-webkit-transform: none;
 	transform: none;
 }
@@ -3178,6 +3210,7 @@ h3 {
 	position: absolute;
 	left: 0;
 	overflow: hidden;
+	max-width: 100%;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
@@ -3951,6 +3984,17 @@ h3 {
 	width: 176px;
 	max-height: 115px;
 	margin: 0 40px;
+}
+
+.gall .scrollWrapper {
+	height: 207px;
+}
+
+.gall img {
+	width: 320px !important;
+	max-width: 320px;
+	height: 207px;
+	max-height: 207px !important;
 }
 
 div.scrollingHotSpotLeft {
@@ -5333,6 +5377,12 @@ h1 {
 	padding-left: 0;
 }
 
+.page-container {
+	width: 320px;
+	min-width: 320px;
+	max-width: 320px;
+}
+
 .logo .link_img svg {
 	display: block;
 	width: 74px;
@@ -5938,6 +5988,13 @@ h3 {
 .main_item__container .description {
 	font-size: 14px;
 	line-height: 20px;
+}
+
+.sb_order .text_14 .link,
+.sb_order .text_14 .nav__link {
+	font-size: 11px;
+	line-height: 16px;
+	display: inline-block;
 }
 
 .tile_logos .tile__item {

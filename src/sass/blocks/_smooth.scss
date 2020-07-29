@@ -18,6 +18,17 @@
     }
 }
 
+.gall {
+  .scrollWrapper {
+    height: 207px;
+  }
+  img {
+    max-width: 320px;
+    width: 320px !important;
+    max-height: 207px !important;
+    height: 207px;
+  }
+}
 
 div.scrollingHotSpotLeft
 {

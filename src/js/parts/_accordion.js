@@ -8,6 +8,8 @@
         if (mediaCheckMT.matches) {
             $('.do_accordion').addClass('accordion');
 
+            $('.accordion__item').removeClass('accordion__item_open');
+
             var Accordion = function(el, multiple) {
                 this.el = el || {};
                 this.multiple = multiple || false;
@@ -36,7 +38,6 @@
             };
 
             var accordion = new Accordion($('.accordion'), false);
-            $('.accordion__item').removeClass('accordion__item_open');
         }
     });
 })(jQuery);
