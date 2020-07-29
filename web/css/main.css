@@ -5425,7 +5425,7 @@ h3 {
 }
 
 .header__inner .phone {
-	margin-right: 40px !important;
+	margin-right: 20px !important;
 }
 
 .header__inner .phone a {
@@ -5995,6 +5995,10 @@ h3 {
 	font-size: 11px;
 	line-height: 16px;
 	display: inline-block;
+}
+
+.desktop {
+	display: none;
 }
 
 .tile_logos .tile__item {

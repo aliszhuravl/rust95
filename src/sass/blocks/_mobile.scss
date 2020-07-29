@@ -34,7 +34,7 @@
     .header__inner {
       padding: 16px;
       .phone {
-        margin-right: 40px !important;
+        margin-right: 20px !important;
         a {
           font-size: 12px !important;
         }
@@ -529,5 +529,8 @@
         line-height: 16px;
       }
     }
+  }
+  .desktop {
+    display: none;
   }
 }
