@@ -13,7 +13,7 @@
         var viewport = document.getElementById('viewport');
 
         if (mediaCheckMobile.matches) {
-            viewport.setAttribute('content', 'width=320px');
+            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
         } else if (mediaCheckTablet.matches) {
             viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
         } else if (mediaCheckDesktop.matches) {
