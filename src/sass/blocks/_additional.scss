@@ -278,7 +278,7 @@
       .img {
         img {
           display: block;
-          width: 100%;
+          //width: 100%;
           transform: scale(1.03);
           -webkit-transform: scale(1.05);
           -moz-transform: scale(1.05);
@@ -374,9 +374,11 @@
 .page_img {
   width: 100%;
   display: flex;
+  align-items: center;
   margin-bottom: 60px;
     img {
       width: 100%;
+      height: auto;
     }
 }
 
@@ -466,7 +468,7 @@
       display: none;
     }
     .inline-label .text_14 .link {
-      font-size: 11px;
+      font-size: 12px;
       line-height: 16px;
     }
   }
@@ -507,13 +509,13 @@
     padding: 0 16px;
   }
   h1 {
-    font-size: 24px;
+    font-size: 30px;
     font-family: $font-family_medium;
-    line-height: 28px;
+    line-height: 36px;
   }
   h2 {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 30px;
+    line-height: 34px;
   }
   .breadcrumbs {
     margin-top: 20px;
@@ -526,7 +528,7 @@
       display: flex;
         .bc_lick {
           color: $color-gray;
-          font-size: 11px;
+          font-size: 12px;
           font-family: $font-family_Inter;
           position: relative;
           padding-left: 10px;
@@ -576,6 +578,13 @@
     .tile__item {
       width: 100%;
       margin-right: 0;
+      .tile__item_top {
+        font-size: 13px;
+        margin-bottom: 20px;
+        .date {
+          font-size: 11px;
+        }
+      }
       .tile__item_text .title {
         max-width: 100%;
       }
@@ -604,12 +613,12 @@
       width: calc(50% - 10px);
       margin-right: 20px;
         .title {
-          font-size: 12px;
+          font-size: 13px;
           line-height: 16px;
           margin-bottom: 12px;
         }
         .descr {
-          font-size: 11px;
+          font-size: 12px;
           line-height: 16px;
         }
         &:nth-child(2n) {
@@ -665,7 +674,7 @@
         .sidebar_box {
           padding: 32px 20px;
           p {
-            margin-bottom: 12px;
+            margin-bottom: 13px;
           }
             &__mail {
               margin-bottom: 20px;
@@ -677,8 +686,8 @@
     max-width: 100%;
   }
   .text_20 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .page-additional .page_title {
     margin-bottom: 32px;
@@ -709,8 +718,8 @@
         .right {
           margin-bottom: 0;
             h3 {
-              font-size: 12px;
-              line-height: 16px;
+              font-size: 13px;
+              line-height: 17px;
               font-family: $font-family_Inter-medium;
               margin-bottom: 0;
             }
@@ -732,5 +741,17 @@
   .tile_tech .tile__item {
     width: 100%;
     margin-right: 0;
+      .text_18 {
+        font-size: 14px;
+      }
+  }
+  .show_more__link .link {
+    font-size: 13px;
+  }
+  .accordion__content {
+    margin-bottom: 32px;
+  }
+  .contacts_box .plus_link .link p {
+    font-size: 12px;
   }
 }

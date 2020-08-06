@@ -8,7 +8,7 @@
     }
   }
     h3 {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 20px;
       margin-bottom: 20px;
     }
@@ -19,24 +19,24 @@
     margin: 0 40px;
   }
     .text_14 {
-      font-size: 11px;
+      font-size: 12px;
       line-height: 16px;
     }
   .caps_mini {
-    font-size: 9px;
+    font-size: 10px;
   }
   .main_item {
     background: none;
   }
   .link {
-    font-size: 14px;
+    font-size: 16px;
   }
     .header__inner {
       padding: 16px;
       .phone {
         margin-right: 20px !important;
         a {
-          font-size: 12px !important;
+          font-size: 14px !important;
         }
       }
     }
@@ -126,10 +126,10 @@
         .mobile {
           margin-bottom: 20px;
           .text_12 {
-            font-size: 10px;
+            font-size: 11px;
             color: $color-gray;
             a {
-              font-size: 10px;
+              font-size: 11px;
             }
           }
         }
@@ -155,7 +155,7 @@
       }
     }
     .btn {
-      font-size: 12px;
+      font-size: 13px;
     }
     .link_arrow {
       width: 320px;
@@ -165,7 +165,7 @@
       background-color: #F5F7F8;
       justify-content: space-between;
       border-radius: 5px;
-      font-size: 12px;
+      font-size: 13px;
       img {
         width: 28px;
         height: 28px;
@@ -238,7 +238,7 @@
         .text_box {
           width: 100%;
           p {
-            font-size: 12px;
+            font-size: 13px;
             line-height: 16px;
             width: 100%;
           }
@@ -263,7 +263,7 @@
         margin-bottom: 32px;
         .boss_text {
           .large {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 24px;
           }
           .quote {
@@ -279,11 +279,11 @@
             }
             .left {
               .name {
-                font-size: 12px;
+                font-size: 13px;
                 line-height: 16px;
               }
               .position {
-                font-size: 11px;
+                font-size: 12px;
                 line-height: 15px;
               }
             }
@@ -312,17 +312,17 @@
           margin-bottom: 12px;
         }
         .date {
-          font-size: 9px;
+          font-size: 10px;
           line-height: 16px;
           margin-bottom: 8px;
         }
         .title {
-          font-size: 16px;
+          font-size: 18px;
           line-height: 20px;
           margin-bottom: 12px;
         }
         .descr {
-          font-size: 11px;
+          font-size: 12px;
           line-height: 16px;
         }
       }
@@ -379,13 +379,13 @@
             margin-bottom: 16px;
           }
           &__big {
-            font-size: 32px;
+            font-size: 36px;
             text-transform: uppercase;
             font-family: $font-family_medium;
             margin-bottom: 16px;
           }
           &__small {
-            font-size: 11px;
+            font-size: 12px;
             font-family: $font-family_medium;
             text-transform: uppercase;
           }
@@ -447,7 +447,7 @@
     }
 
     .text_28 {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 20px;
     }
     .logo {
@@ -472,7 +472,7 @@
       }
     }
     .inter_16 {
-      font-size: 12px;
+      font-size: 13px;
       line-height: 20px;
     }
     .button_container {
@@ -488,7 +488,7 @@
       display: block;
     }
   .link_arrow span {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 16px;
   }
   .plus_link .link .round_link {
@@ -507,24 +507,24 @@
       }
   }
   .plus_link .link p {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 640px) {
   .numbers {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 30px;
+    line-height: 36px;
     margin-bottom: 20px;
   }
   .main_item__container .description {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .sb_order {
     .text_14 {
       .link {
-        font-size: 11px;
+        font-size: 12px;
         display: inline-block;
         line-height: 16px;
       }

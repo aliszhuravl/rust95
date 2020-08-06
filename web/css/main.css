@@ -1669,7 +1669,7 @@ select {
 }
 
 .show_more__link a {
-	font-family: 'Gilroy-Regular', 'Arial', serif;
+	font-family: 'Inter_Medium', 'Arial', serif;
 	font-size: 14px;
 	display: flex;
 	text-transform: lowercase;
@@ -2940,7 +2940,6 @@ select {
 
 .films_mini .tile__item:hover .img img {
 	display: block;
-	width: 100%;
 	-webkit-transform: scale(1.05);
 	-moz-transform: scale(1.05);
 	-o-transform: scale(1.05);
@@ -3034,10 +3033,12 @@ select {
 	display: flex;
 	width: 100%;
 	margin-bottom: 60px;
+	align-items: center;
 }
 
 .page_img img {
 	width: 100%;
+	height: auto;
 }
 
 .tile_tech {
@@ -5383,7 +5384,7 @@ h1 {
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 20px;
 	margin-bottom: 20px;
 }
@@ -5397,12 +5398,12 @@ h3 {
 }
 
 .text_14 {
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 16px;
 }
 
 .caps_mini {
-	font-size: 9px;
+	font-size: 10px;
 }
 
 .main_item {
@@ -5411,7 +5412,7 @@ h3 {
 
 .link,
 .nav__link {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .header__inner {
@@ -5423,7 +5424,7 @@ h3 {
 }
 
 .header__inner .phone a {
-	font-size: 12px !important;
+	font-size: 14px !important;
 }
 
 .menu_box {
@@ -5528,12 +5529,12 @@ h3 {
 }
 
 .main_item__container .mobile .text_12 {
-	font-size: 10px;
+	font-size: 11px;
 	color: #9198a6;
 }
 
 .main_item__container .mobile .text_12 a {
-	font-size: 10px;
+	font-size: 11px;
 }
 
 .main_item__container .button_container .btn {
@@ -5558,11 +5559,11 @@ h3 {
 }
 
 .btn {
-	font-size: 12px;
+	font-size: 13px;
 }
 
 .link_arrow {
-	font-size: 12px;
+	font-size: 13px;
 	width: 320px;
 	max-width: 100%;
 	height: 56px;
@@ -5660,7 +5661,7 @@ h3 {
 }
 
 .tile_25__item .text_box p {
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 16px;
 	width: 100%;
 }
@@ -5686,7 +5687,7 @@ h3 {
 }
 
 .boss_block .right .boss_text .large {
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 24px;
 }
 
@@ -5704,12 +5705,12 @@ h3 {
 }
 
 .boss_block .right .boss_text .sign_block .left .name {
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 16px;
 }
 
 .boss_block .right .boss_text .sign_block .left .position {
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 15px;
 }
 
@@ -5742,19 +5743,19 @@ h3 {
 }
 
 .tile__item .date {
-	font-size: 9px;
+	font-size: 10px;
 	line-height: 16px;
 	margin-bottom: 8px;
 }
 
 .tile__item .title {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 20px;
 	margin-bottom: 12px;
 }
 
 .tile__item .descr {
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 16px;
 }
 
@@ -5818,14 +5819,14 @@ h3 {
 
 .mobile_video__inner .mv_title__big {
 	font-family: 'Gilroy-Medium', 'Arial', serif;
-	font-size: 32px;
+	font-size: 36px;
 	margin-bottom: 16px;
 	text-transform: uppercase;
 }
 
 .mobile_video__inner .mv_title__small {
 	font-family: 'Gilroy-Medium', 'Arial', serif;
-	font-size: 11px;
+	font-size: 12px;
 	text-transform: uppercase;
 }
 
@@ -5893,7 +5894,7 @@ h3 {
 }
 
 .text_28 {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 20px;
 }
 
@@ -5922,7 +5923,7 @@ h3 {
 }
 
 .inter_16 {
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 20px;
 }
 
@@ -5943,7 +5944,7 @@ h3 {
 }
 
 .link_arrow span {
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 16px;
 }
 
@@ -5970,23 +5971,23 @@ h3 {
 
 .plus_link .link p,
 .plus_link .nav__link p {
-	font-size: 11px;
+	font-size: 12px;
 }
 
 .numbers {
-	font-size: 24px;
-	line-height: 28px;
+	font-size: 30px;
+	line-height: 36px;
 	margin-bottom: 20px;
 }
 
 .main_item__container .description {
-	font-size: 14px;
-	line-height: 20px;
+	font-size: 16px;
+	line-height: 22px;
 }
 
 .sb_order .text_14 .link,
 .sb_order .text_14 .nav__link {
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 16px;
 	display: inline-block;
 }
@@ -6060,7 +6061,7 @@ h3 {
 
 .order_mobile .inline-label .text_14 .link,
 .order_mobile .inline-label .text_14 .nav__link {
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 16px;
 }
 
@@ -6107,13 +6108,13 @@ h3 {
 
 h1 {
 	font-family: 'Gilroy-Medium', 'Arial', serif;
-	font-size: 24px;
-	line-height: 28px;
+	font-size: 30px;
+	line-height: 36px;
 }
 
 h2 {
-	font-size: 24px;
-	line-height: 28px;
+	font-size: 30px;
+	line-height: 34px;
 }
 
 .breadcrumbs {
@@ -6132,7 +6133,7 @@ h2 {
 
 .breadcrumbs_link .bc_lick {
 	font-family: 'Inter_Regular', 'Arial', serif;
-	font-size: 11px;
+	font-size: 12px;
 	position: relative;
 	padding-left: 10px;
 	color: #9198a6;
@@ -6193,6 +6194,15 @@ h2 {
 	margin-right: 0;
 }
 
+.tile_article .tile__item .tile__item_top {
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+.tile_article .tile__item .tile__item_top .date {
+	font-size: 11px;
+}
+
 .tile_article .tile__item .tile__item_text .title {
 	max-width: 100%;
 }
@@ -6227,13 +6237,13 @@ h2 {
 }
 
 .tile_boss .tile__item .title {
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 16px;
 	margin-bottom: 12px;
 }
 
 .tile_boss .tile__item .descr {
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 16px;
 }
 
@@ -6307,7 +6317,7 @@ h2 {
 }
 
 .body_sidebar__sidebar .sidebar_box p {
-	margin-bottom: 12px;
+	margin-bottom: 13px;
 }
 
 .body_sidebar__sidebar .sidebar_box__mail {
@@ -6320,8 +6330,8 @@ h2 {
 
 .text_20,
 .video_slider .slider_nav__inner .sni_item p {
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 18px;
+	line-height: 22px;
 }
 
 .page-additional .page_title {
@@ -6364,8 +6374,8 @@ h2 {
 
 .tile_category .tile__item .right h3 {
 	font-family: 'Inter_Medium', 'Arial', serif;
-	font-size: 12px;
-	line-height: 16px;
+	font-size: 13px;
+	line-height: 17px;
 	margin-bottom: 0;
 }
 
@@ -6390,6 +6400,24 @@ h2 {
 .tile_tech .tile__item {
 	width: 100%;
 	margin-right: 0;
+}
+
+.tile_tech .tile__item .text_18 {
+	font-size: 14px;
+}
+
+.show_more__link .link,
+.show_more__link .nav__link {
+	font-size: 13px;
+}
+
+.accordion__content {
+	margin-bottom: 32px;
+}
+
+.contacts_box .plus_link .link p,
+.contacts_box .plus_link .nav__link p {
+	font-size: 12px;
 }
 
 .item_main {
