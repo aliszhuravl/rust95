@@ -754,4 +754,25 @@
   .contacts_box .plus_link .link p {
     font-size: 12px;
   }
+  .pop-v .popup_inner .popup_title {
+    padding: 40px 40px 0 20px;
+  }
+  .pop-v .popup_inner .pop_body__title {
+    padding: 0 20px;
+  }
+  .pop-v .popup_inner .pop_body__body {
+    padding: 0 20px;
+  }
+  .pop-v .question_box {
+    padding: 20px;
+      .qb_body {
+        flex-direction: column;
+        .left a {
+          font-size: 18px;
+        }
+        .right a {
+          font-size: 18px;
+        }
+      }
+  }
 }

@@ -6420,6 +6420,34 @@ h2 {
 	font-size: 12px;
 }
 
+.pop-v .popup_inner .popup_title {
+	padding: 40px 40px 0 20px;
+}
+
+.pop-v .popup_inner .pop_body__title {
+	padding: 0 20px;
+}
+
+.pop-v .popup_inner .pop_body__body {
+	padding: 0 20px;
+}
+
+.pop-v .question_box {
+	padding: 20px;
+}
+
+.pop-v .question_box .qb_body {
+	flex-direction: column;
+}
+
+.pop-v .question_box .qb_body .left a {
+	font-size: 18px;
+}
+
+.pop-v .question_box .qb_body .right a {
+	font-size: 18px;
+}
+
 .item_main {
 	flex-direction: column;
 	margin-bottom: 40px;
