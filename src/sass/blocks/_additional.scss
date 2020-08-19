@@ -358,7 +358,7 @@
       background-position: 96% center;
       background-repeat: no-repeat;
     }
-    button {
+    .btn {
       font-size: 14px;
       &:first-child {
         margin-bottom: 20px;
@@ -707,6 +707,8 @@
       width: 50%;
       flex-direction: column;
       margin-left: -1px;
+      text-decoration: none;
+      color: $color-black;
         .left {
           width: 100%;
           border-right: 0;
@@ -725,6 +727,7 @@
               line-height: 17px;
               font-family: $font-family_Inter-medium;
               margin-bottom: 0;
+              color: $color-black;
             }
         }
         .charact {

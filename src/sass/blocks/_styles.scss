@@ -72,6 +72,7 @@
     width: calc(33.333% - 22px);
     margin-right: 32px;
     cursor: pointer;
+    color: $color-black;
 
     text-decoration: none;
     &:nth-child(3n+3) {
@@ -157,7 +158,17 @@
     position: relative;
 
     border-top: 1px solid $color-gray-border;
-
+    &_arrbox {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 12px;
+        .title {
+          max-width: 200px;
+        }
+    }
     &_top {
       padding-top: 20px;
       margin-bottom: 32px;
@@ -188,6 +199,39 @@
       &:after {
         width: 100%;
         transition: all 0.3s ease-out;
+      }
+    }
+  }
+}
+
+.tile_manuf {
+  .tile__item {
+    padding-bottom: 32px;
+    border-top: 0;
+    border-bottom: 1px solid $color-gray-border;
+    &_img {
+      img {
+        width: 100%;
+      }
+    }
+    &_arrbox {
+      img {
+        transition: all 0.3s ease-out;
+        opacity: 0.6;
+      }
+    }
+    .main_16 {
+      max-width: 80%;
+    }
+    &:after {
+      bottom: -1px;
+      top: auto;
+    }
+    &:hover {
+      .tile__item_arrbox {
+        img {
+          opacity: 1;
+        }
       }
     }
   }

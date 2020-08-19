@@ -35,3 +35,41 @@
       }
     }
 }
+
+.nav__list {
+  .dropdown {
+    .dropdown__text {
+      p {
+        font-size: 15px;
+        color: $color-black;
+          &:after {
+            width: 6px;
+            height: 6px;
+            top: 5px;
+          }
+      }
+    }
+  }
+  .dropdown__list {
+    top: 82px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+  }
+  .dropdown__list li {
+    padding: 12px 8px;
+    max-width: 230px;
+    a {
+      color: $color-black-light;
+        &:hover {
+          color: $color-green;
+        }
+    }
+  }
+  .product_list {
+    column-count: 2;
+  }
+  .dropdown__text {
+    padding-left: 0;
+  }
+}
