@@ -72,6 +72,8 @@
     width: calc(33.333% - 22px);
     margin-right: 32px;
     cursor: pointer;
+
+    text-decoration: none;
     &:nth-child(3n+3) {
       margin-right: 0;
     }
@@ -113,6 +115,7 @@
         font-family: $font-family_semibold;
         max-width: 90%;
         margin-bottom: 12px;
+        color: $color-black;
           span {
             //border-color: transparent;
             transition: all 0.3s ease-out;
@@ -479,4 +482,8 @@
         }
     }
   }
+}
+
+.gray_main {
+  padding: 80px 0 0 0;
 }

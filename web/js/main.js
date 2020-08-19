@@ -71,7 +71,7 @@ window.onload = function() {
                 if (target.length) {
                     $('html, body').animate({
                         scrollTop: target.offset().top - 80
-                    }, 600);
+                    }, 800);
                     return false;
                 }
             }
