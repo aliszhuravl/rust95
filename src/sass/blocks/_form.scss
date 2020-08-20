@@ -80,3 +80,30 @@ select {
   -moz-appearance: none;
   appearance: none;
 }
+
+.search_item {
+  border-radius: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background-image: url('../img/loop.svg');
+  background-repeat: no-repeat;
+  background-position: 99% center;
+  width: -webkit-fill-available;
+  background-size: 16px;
+  &::-webkit-input-placeholder {color: $color-black; transition: color .3s;
+    font-size: 28px;
+    line-height: 36px;
+    font-family: $font-family_medium;}
+  &::-moz-placeholder          {color: $color-black; transition: color .3s; font-size: 28px;
+    line-height: 36px;
+    font-family: $font-family_medium;}
+  &:hover,
+  &:focus,
+  &:active {
+    border-radius: 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+}

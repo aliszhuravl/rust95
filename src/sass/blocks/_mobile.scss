@@ -533,4 +533,50 @@
   .desktop {
     display: none;
   }
+  .tile_results {
+    margin-bottom: 32px;
+  }
+  .search_link__item {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .search_block__inner {
+    padding: 20px 0;
+    max-width:100%;
+    min-width:100%;
+      .form__item {
+        &::-webkit-input-placeholder {color: $color-black; transition: color .3s;
+          font-size: 18px;
+          line-height: 24px;
+          font-family: $font-family_medium;}
+        &::-moz-placeholder          {color: $color-black; transition: color .3s; font-size: 18px;
+          line-height: 24px;
+          font-family: $font-family_medium;}
+      }
+  }
+  .about_descr {
+    flex-direction: column;
+    .left {
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  .about_page {
+    .tile_logos {
+      margin-bottom: 32px;
+    }
+  }
+  .bsc_about {
+    .tile {
+      &__item {
+        margin-right: 0;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }

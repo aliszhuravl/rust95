@@ -147,6 +147,23 @@
     }
 }
 
+.bsc_about {
+  width: 100%;
+  margin-right: 0;
+    .tile {
+      &__item {
+        width: calc(33.333% - 24px);
+        margin-right: 32px;
+        &:nth-child(2n) {
+          margin-right: 32px;
+        }
+        &:nth-child(3n+3) {
+          margin-right: 0;
+        }
+      }
+    }
+}
+
 .tile_sertificates, .tile_logos {
   .tile__item {
     padding: 56px;
