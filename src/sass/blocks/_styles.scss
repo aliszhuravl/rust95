@@ -615,3 +615,53 @@
     }
   }
 }
+
+.reference_tile {
+  width: 100%;
+  &__item {
+    border-top: 1px solid #AFB4C8;
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+      .left_text {
+        margin-right: 40px;
+        width: 50%;
+        display: flex;
+          .point {
+            font-size: 28px;
+            font-family: $font-family;
+            color: #AFB4C8;
+            margin-right: 20px;
+          }
+          .text {
+            .text_28 {
+              margin-bottom: 20px;
+            }
+            .client {
+              margin-bottom: 20px;
+              display: flex;
+              align-items: center;
+                span {
+                  margin: 0 12px;
+                  color: $color-gray-border;
+                }
+            }
+            .ref_descr {
+              color: $color-black-light;
+              p:first-child {
+                margin-bottom: 20px;
+              }
+            }
+          }
+       }
+      .right_img {
+        width: 50%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+  }
+}

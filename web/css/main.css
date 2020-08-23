@@ -699,7 +699,12 @@ h3 {
 }
 
 .header {
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 9;
+	top: 0;
 	border-bottom: 1px solid #e2e4ea;
+	background-color: #fff;
 }
 
 .header__inner {
@@ -848,9 +853,53 @@ h3 {
 
 .footer__inner {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	width: 100%;
-	align-items: center;
+	align-items: flex-start;
+}
+
+.footer__inner .footer_top {
+	display: flex;
+	width: 100%;
+	margin-bottom: 40px;
+	padding-top: 40px;
+	border-top: 1px solid #e2e4ea;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.footer__inner .footer_top__item {
+	width: 20%;
+	max-width: 200px;
+	margin-right: 60px;
+}
+
+.footer__inner .footer_top__item:last-child {
+	margin-right: 0;
+}
+
+.footer__inner .footer_top__item .ft_title {
+	margin-bottom: 20px;
+	color: #1e2127;
+}
+
+.footer__inner .footer_top__item .link_list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.footer__inner .footer_top__item .link_list li {
+	margin-bottom: 20px;
+}
+
+.footer__inner .footer_top__item .link_list li a {
+	font-size: 14px;
+	color: #545963;
+}
+
+.footer__inner .footer_top__item .link_list li a:hover {
+	color: #2a9260;
 }
 
 .footer__inner .footer_bottom {
@@ -2004,6 +2053,64 @@ select {
 
 .about_descr .right .text_28 {
 	margin-bottom: 32px;
+}
+
+.reference_tile {
+	width: 100%;
+}
+
+.reference_tile__item {
+	display: flex;
+	width: 100%;
+	margin-bottom: 40px;
+	padding-top: 40px;
+	border-top: 1px solid #afb4c8;
+	align-items: flex-start;
+}
+
+.reference_tile__item .left_text {
+	display: flex;
+	width: 50%;
+	margin-right: 40px;
+}
+
+.reference_tile__item .left_text .point {
+	font-family: 'Gilroy-Regular', 'Arial', serif;
+	font-size: 28px;
+	margin-right: 20px;
+	color: #afb4c8;
+}
+
+.reference_tile__item .left_text .text .text_28 {
+	margin-bottom: 20px;
+}
+
+.reference_tile__item .left_text .text .client {
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+}
+
+.reference_tile__item .left_text .text .client span {
+	margin: 0 12px;
+	color: #e2e4ea;
+}
+
+.reference_tile__item .left_text .text .ref_descr {
+	color: #545963;
+}
+
+.reference_tile__item .left_text .text .ref_descr p:first-child {
+	margin-bottom: 20px;
+}
+
+.reference_tile__item .right_img {
+	width: 50%;
+}
+
+.reference_tile__item .right_img img {
+	width: 100%;
+	height: auto;
 }
 
 .main_item {
@@ -6291,6 +6398,10 @@ h3 {
 
 .bsc_about .tile__item:nth-child(2n) {
 	margin-right: 0;
+}
+
+.footer__inner .footer_top {
+	display: none;
 }
 
 .tile_logos .tile__item {

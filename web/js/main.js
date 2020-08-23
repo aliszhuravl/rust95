@@ -351,7 +351,7 @@ $(function() {
 (function($) {
 
     $('.sticky').hcSticky({
-        top: 90,
+        top: 120,
         bottomEnd: 40,
         className: 'is-sticky',
         wrapperClassName: 'wrapper-sticky'
