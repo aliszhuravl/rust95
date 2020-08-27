@@ -665,3 +665,134 @@
       }
   }
 }
+
+.full_img {
+  width: 100%;
+  height: auto;
+}
+
+.kb_right {
+  .full_img {
+    margin-bottom: 40px;
+  }
+  .tile_gray {
+    margin-top: 40px;
+      .tile__item {
+        &_title {
+          border-bottom: 1px solid $color-gray;
+          padding-bottom: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 12px;
+            span {
+              font-size: 64px;
+              line-height: 64px;
+              margin-right: 6px;
+            }
+        }
+      }
+  }
+}
+
+.kb_left {
+  border-right: 0 !important;
+}
+
+.text_margin {
+  margin-bottom: 20px;
+}
+
+.text_last {
+  margin-bottom: 40px;
+}
+
+.sections_menu {
+  ul {
+    //width: 100% !important;
+    li {
+      display: flex;
+      align-items: center;
+        img {
+          margin-right: 20px;
+        }
+    }
+  }
+}
+
+.pu_img {
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+  img {
+    width: 100%;
+  }
+  .pu_text {
+    position: absolute;
+    z-index: 1;
+    bottom: 40px;
+    left: 40px;
+      h2 {
+        margin-bottom: 12px;
+      }
+      .caps_mini {
+        color: #fff;
+      }
+  }
+}
+
+.slider_container {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $color-black;
+  position: relative;
+  margin-bottom: 56px;
+    .pu_slide {
+      img {
+        width: 100%;
+      }
+    }
+    .slider_descr {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+        p {
+          color: $color-black;
+        }
+    }
+  .btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+      .btn_slides {
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+          &:hover {
+            opacity: 0.7;
+          }
+      }
+  }
+}
+
+.categories_body {
+  .right {
+    .tile_category .tile__item {
+      justify-content: space-between;
+      .left {
+        width: 40%;
+        border-right:0;
+      }
+      .right {
+        padding-left: 0;
+        width: 60%;
+      }
+    }
+  }
+}

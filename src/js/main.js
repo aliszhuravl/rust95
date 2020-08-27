@@ -12,3 +12,4 @@
 //= parts/_dropdown.js
 //= parts/_vp-animate.js
 //= parts/_popup.js
+//= parts/_fancybox.js

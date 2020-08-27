@@ -39,8 +39,8 @@
                 <ul class="nav__list">
                     <li class="nav__link"><a href="about.html">О нас</a></li>
                     <li class="nav__link">
-                            <div class="dropdown">
-                            <div class="dropdown__text"><p>Производство</p></div>
+                        <div class="dropdown_hover">
+                            <div class="dropdown__text"><p><a href="manufacturing.html">Производство</a></p></div>
                             <ul class="dropdown__list">
                                 <li class="dropdown__item">
                                     <a href="sections.html">Производственные участки</a>
@@ -58,8 +58,8 @@
                         </div>
                     </li>
                     <li class="nav__link">
-                        <div class="dropdown">
-                            <div class="dropdown__text"><p>Продукция</p></div>
+                        <div class="dropdown_hover">
+                            <div class="dropdown__text"><p><a href="catalog.html">Продукция</a></p></div>
                             <ul class="dropdown__list product_list">
                                 <li class="dropdown__item">
                                     <a href="category.html">Клапаны</a>
@@ -94,20 +94,20 @@
                         </div>
                     </li>
                     <li class="nav__link">
-                        <div class="dropdown">
-                            <div class="dropdown__text"><p>Пресс-центр</p></div>
+                        <div class="dropdown_hover">
+                            <div class="dropdown__text"><p><a href="press.html">Пресс-центр</a></p></div>
                             <ul class="dropdown__list">
                                 <li class="dropdown__item">
-                                    <a href="sections.html">Фильмы и видео</a>
+                                    <a href="films.html">Фильмы и видео</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="buerau.html">Новости</a>
+                                    <a href="news.html">Новости</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="tech.html">Статьи</a>
+                                    <a href="articles.html">Статьи</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="service.html">Фотогалерея</a>
+                                    <a href="gallery.html">Фотогалерея</a>
                                 </li>
                             </ul>
                         </div>
@@ -189,7 +189,7 @@
             </section>
             <section class="page__item page__border gs_animate">
                 <div class="mobile_video">
-                    <div class="mobile_video__inner">
+                        <div class="mobile_video__inner modal_show">
                         <div class="mv_title">
                             <img src="img/play.png" alt="">
                             <p class="mv_title__big">В сердце потока</p>
@@ -215,7 +215,11 @@
                                             <h1>В сердце потока</h1>
                                         </div>
                                     </div>
-                                    <img src="img/v1.jpg" alt="#">
+                                    <!--<img src="img/v1.jpg" alt="#">-->
+                                    <video width="100%" poster="img/v1.jpg" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+                                        <source src="img/vid.mp4" type="video/mp4">
+                                        <source src="img/vid.mp4" type="video/ogg">
+                                    </video>
                                 </div>
                             </div>
                         </div>
@@ -232,7 +236,10 @@
                                             <h1>В сердце потока</h1>
                                         </div>
                                     </div>
-                                    <img src="img/v1.jpg" alt="#">
+                                    <video width="100%" poster="img/v1.jpg" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+                                        <source src="img/vid.mp4" type="video/mp4">
+                                        <source src="img/vid.mp4" type="video/ogg">
+                                    </video>
                                 </div>
                             </div>
                         </div>
@@ -249,7 +256,10 @@
                                             <h1>В сердце потока</h1>
                                         </div>
                                     </div>
-                                    <img src="img/v1.jpg" alt="#">
+                                    <video width="100%" poster="img/v1.jpg" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+                                        <source src="img/vid.mp4" type="video/mp4">
+                                        <source src="img/vid.mp4" type="video/ogg">
+                                    </video>
                                 </div>
                             </div>
                         </div>
@@ -266,7 +276,10 @@
                                             <h1>В сердце потока</h1>
                                         </div>
                                     </div>
-                                    <img src="img/v1.jpg" alt="#">
+                                    <video width="100%" poster="img/v1.jpg" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+                                        <source src="img/vid.mp4" type="video/mp4">
+                                        <source src="img/vid.mp4" type="video/ogg">
+                                    </video>
                                 </div>
                             </div>
                         </div>
@@ -594,7 +607,6 @@
                         <li><a href="category.html" class="link">Фильтры сетчатые</a></li>
 
                         <li><a href="category.html" class="link">Блочные системы управления</a></li>
-
                     </ul>
                 </div>
                 <div class="footer_top__item">
@@ -681,6 +693,21 @@
             <input class="form__item search_item" type="search" placeholder="Поиск по сайту">
         </div>
     </div>
+    <div class="popup_wrapper">
+        <div class="popup">
+            <div class="closepop"><div class="round_link cross-pop"><span></span></div></div>
+            <div class="popup_inner">
+                <div class="popup_inner__body">
+                    <div class="pop_img">
+                        <video width="100%" poster="img/v1.jpg" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+                            <source src="img/vid.mp4" type="video/mp4">
+                            <source src="img/vid.mp4" type="video/ogg">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
@@ -689,6 +716,7 @@
 <script src="js/libs/jquery.viewportchecker.min.js"></script>
 <script src="js/libs/jquery.hc-sticky.min.js"></script>
 <script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/jquery.fancybox/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

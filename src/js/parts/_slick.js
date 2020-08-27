@@ -100,4 +100,23 @@ $(document).ready(function() {
         });
     });
 
+    $('#pu_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        cssEase: 'linear',
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        prevArrow: $('#btn_prev_c'),
+        nextArrow: $('#btn_next_c')
+    });
+
+    $('#pu_slider')
+        .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            var indexSlide = nextSlide + 1;
+            $('.b-slide-number').text(indexSlide);
+        });
+
 });
+

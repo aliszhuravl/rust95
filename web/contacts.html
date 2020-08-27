@@ -39,8 +39,8 @@
                 <ul class="nav__list">
                     <li class="nav__link"><a href="about.html">О нас</a></li>
                     <li class="nav__link">
-                            <div class="dropdown">
-                            <div class="dropdown__text"><p>Производство</p></div>
+                        <div class="dropdown_hover">
+                            <div class="dropdown__text"><p><a href="manufacturing.html">Производство</a></p></div>
                             <ul class="dropdown__list">
                                 <li class="dropdown__item">
                                     <a href="sections.html">Производственные участки</a>
@@ -58,8 +58,8 @@
                         </div>
                     </li>
                     <li class="nav__link">
-                        <div class="dropdown">
-                            <div class="dropdown__text"><p>Продукция</p></div>
+                        <div class="dropdown_hover">
+                            <div class="dropdown__text"><p><a href="catalog.html">Продукция</a></p></div>
                             <ul class="dropdown__list product_list">
                                 <li class="dropdown__item">
                                     <a href="category.html">Клапаны</a>
@@ -94,20 +94,20 @@
                         </div>
                     </li>
                     <li class="nav__link">
-                        <div class="dropdown">
-                            <div class="dropdown__text"><p>Пресс-центр</p></div>
+                        <div class="dropdown_hover">
+                            <div class="dropdown__text"><p><a href="press.html">Пресс-центр</a></p></div>
                             <ul class="dropdown__list">
                                 <li class="dropdown__item">
-                                    <a href="sections.html">Фильмы и видео</a>
+                                    <a href="films.html">Фильмы и видео</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="buerau.html">Новости</a>
+                                    <a href="news.html">Новости</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="tech.html">Статьи</a>
+                                    <a href="articles.html">Статьи</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="service.html">Фотогалерея</a>
+                                    <a href="gallery.html">Фотогалерея</a>
                                 </li>
                             </ul>
                         </div>
@@ -128,7 +128,7 @@
         </div>
     </header>
     <main class="page">
-        <div class="page__inner">
+        <div class="page__inner margin_bottom">
             <section class="page_item grid_block">
                 <div class="breadcrumbs">
                     <ul class="breadcrumbs_list">
@@ -153,7 +153,7 @@
                             <div class="plus_link">
                                 <a href="#" class="link">
                                     <div class="round_link"><span></span></div>
-                                    <p class="call_popup">Как добраться</p>
+                                    <p class="call_popup modal_show">Как добраться</p>
                                 </a>
                             </div>
                             <div class="contacts_phone">
@@ -177,7 +177,7 @@
                             <div class="plus_link">
                                 <a href="#" class="link">
                                     <div class="round_link"><span></span></div>
-                                    <p class="call_popup">Как добраться</p>
+                                    <p class="call_popup modal_show">Как добраться</p>
                                 </a>
                             </div>
                             <div class="contacts_phone">
@@ -239,7 +239,6 @@
                         <li><a href="category.html" class="link">Фильтры сетчатые</a></li>
 
                         <li><a href="category.html" class="link">Блочные системы управления</a></li>
-
                     </ul>
                 </div>
                 <div class="footer_top__item">
@@ -320,9 +319,9 @@
             </div>
         </div>
     </footer>
-    <section class="popup_wrapper popm">
+    <div class="popup_wrapper">
         <div class="popup">
-            <div class="closepop"><div class="round_link" id="cross-pop"><span></span></div></div>
+            <div class="closepop"><div class="round_link cross-pop"><span></span></div></div>
             <div class="popup_inner">
                 <div class="popup_inner__body">
                    <p class="popup_title caps_mini">Как добраться?</p>
@@ -342,7 +341,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <div class="search_block">
         <div class="close_pop"><div class="round_link" id="cross-search"><span></span></div></div>
         <div class="search_block__inner">
@@ -357,6 +356,7 @@
 <script src="js/libs/jquery.viewportchecker.min.js"></script>
 <script src="js/libs/jquery.hc-sticky.min.js"></script>
 <script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/jquery.fancybox/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

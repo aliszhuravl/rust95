@@ -1,0 +1,17 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.5 8.81C7.5 6.42965 9.42965 4.5 11.81 4.5H16H20.19C22.5703 4.5 24.5 6.42965 24.5 8.81V19.7207C24.5 20.9225 23.8848 22.0407 22.8697 22.6841L19.2863 24.955C18.7246 25.311 18.0733 25.5 17.4083 25.5H14.5917C13.9267 25.5 13.2754 25.311 12.7137 24.955L9.13032 22.6841C8.11518 22.0407 7.5 20.9225 7.5 19.7207V8.81Z" fill="white" stroke="#AFB4C8"/>
+<mask id="path-2-inside-1" fill="white">
+<rect x="10" y="11" width="12" height="5" rx="0.801667"/>
+</mask>
+<rect x="10" y="11" width="12" height="5" rx="0.801667" fill="#F5F7F8" stroke="#AFB4C8" stroke-width="2" mask="url(#path-2-inside-1)"/>
+<mask id="path-3-inside-2" fill="white">
+<path d="M5 11.8017C5 11.3589 5.35892 11 5.80167 11H8V15H5.80167C5.35892 15 5 14.6411 5 14.1983V11.8017Z"/>
+</mask>
+<path d="M5 11.8017C5 11.3589 5.35892 11 5.80167 11H8V15H5.80167C5.35892 15 5 14.6411 5 14.1983V11.8017Z" fill="#F5F7F8" stroke="#AFB4C8" stroke-width="2" mask="url(#path-3-inside-2)"/>
+<mask id="path-4-inside-3" fill="white">
+<path d="M27 11.8017C27 11.3589 26.6411 11 26.1983 11H24V15H26.1983C26.6411 15 27 14.6411 27 14.1983V11.8017Z"/>
+</mask>
+<path d="M27 11.8017C27 11.3589 26.6411 11 26.1983 11H24V15H26.1983C26.6411 15 27 14.6411 27 14.1983V11.8017Z" fill="#F5F7F8" stroke="#AFB4C8" stroke-width="2" mask="url(#path-4-inside-3)"/>
+<rect x="8" y="18" width="16" height="1" fill="#AFB4C8"/>
+<path d="M8 8H24V9H8V8Z" fill="#AFB4C8"/>
+</svg>

@@ -39,8 +39,8 @@
                 <ul class="nav__list">
                     <li class="nav__link"><a href="about.html">О нас</a></li>
                     <li class="nav__link">
-                            <div class="dropdown">
-                            <div class="dropdown__text"><p>Производство</p></div>
+                        <div class="dropdown_hover">
+                            <div class="dropdown__text"><p><a href="manufacturing.html">Производство</a></p></div>
                             <ul class="dropdown__list">
                                 <li class="dropdown__item">
                                     <a href="sections.html">Производственные участки</a>
@@ -58,8 +58,8 @@
                         </div>
                     </li>
                     <li class="nav__link">
-                        <div class="dropdown">
-                            <div class="dropdown__text"><p>Продукция</p></div>
+                        <div class="dropdown_hover">
+                            <div class="dropdown__text"><p><a href="catalog.html">Продукция</a></p></div>
                             <ul class="dropdown__list product_list">
                                 <li class="dropdown__item">
                                     <a href="category.html">Клапаны</a>
@@ -94,20 +94,20 @@
                         </div>
                     </li>
                     <li class="nav__link">
-                        <div class="dropdown">
-                            <div class="dropdown__text"><p>Пресс-центр</p></div>
+                        <div class="dropdown_hover">
+                            <div class="dropdown__text"><p><a href="press.html">Пресс-центр</a></p></div>
                             <ul class="dropdown__list">
                                 <li class="dropdown__item">
-                                    <a href="sections.html">Фильмы и видео</a>
+                                    <a href="films.html">Фильмы и видео</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="buerau.html">Новости</a>
+                                    <a href="news.html">Новости</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="tech.html">Статьи</a>
+                                    <a href="articles.html">Статьи</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="service.html">Фотогалерея</a>
+                                    <a href="gallery.html">Фотогалерея</a>
                                 </li>
                             </ul>
                         </div>
@@ -128,7 +128,7 @@
         </div>
     </header>
     <main class="page">
-        <div class="page__inner">
+        <div class="page__inner margin_bottom">
             <section class="page_item grid_block">
                 <div class="breadcrumbs">
                     <ul class="breadcrumbs_list">
@@ -148,7 +148,7 @@
                     <div class="body_sidebar">
                         <div class="body_sidebar__content margin_block">
                             <div class="tile">
-                                <div class="tile__item" id="vacancy">
+                                <div class="tile__item modal_show">
                                     <div class="tile__item_text">
                                         <p class="date caps_mini">Санкт-Петербург</p>
                                         <p class="title">Инженер-конструктор (промышленная трубопроводная арматура)</p>
@@ -164,7 +164,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tile__item">
+                                <div class="tile__item modal_show">
                                     <div class="tile__item_text">
                                         <p class="date caps_mini">Колпино</p>
                                         <p class="title">Контролер ОТК</p>
@@ -180,7 +180,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tile__item">
+                                <div class="tile__item modal_show">
                                     <div class="tile__item_text">
                                         <p class="date caps_mini">Санкт-Петербург</p>
                                         <p class="title">Программист 1С</p>
@@ -196,7 +196,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tile__item">
+                                <div class="tile__item modal_show">
                                     <div class="tile__item_text">
                                         <p class="date caps_mini">Москва</p>
                                         <p class="title">Ассистент руководителя крупных проектов</p>
@@ -212,7 +212,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tile__item">
+                                <div class="tile__item modal_show">
                                     <div class="tile__item_text">
                                         <p class="date caps_mini">Москва</p>
                                         <p class="title">Специалист отдела сопровождения заказов</p>
@@ -275,7 +275,6 @@
                         <li><a href="category.html" class="link">Фильтры сетчатые</a></li>
 
                         <li><a href="category.html" class="link">Блочные системы управления</a></li>
-
                     </ul>
                 </div>
                 <div class="footer_top__item">
@@ -362,69 +361,69 @@
             <input class="form__item search_item" type="search" placeholder="Поиск по сайту">
         </div>
     </div>
-    <section class="popup_wrapper pop-v">
+    <div class="popup_wrapper">
         <div class="popup">
-            <div class="closepop"><div class="round_link" id="cross-pop"><span></span></div></div>
+            <div class="closepop"><div class="round_link cross-pop"><span></span></div></div>
             <div class="popup_inner">
-                <div class="popup_inner__body">
-                   <p class="popup_title caps_mini">Санкт-Петербург</p>
-                    <div class="pop_body pb_column">
-                        <div class="pop_body__title">
-                            <h3>Инженер-конструктор (промышленная трубопроводная арматура)</h3>
-                            <div class="exp">
-                                <p  class="text_14">Опыт от 1 до 3 лет</p>
-                                <span>|</span>
-                                <p class="text_14">Полная занятость</p>
-                            </div>
-                        </div>
-                        <div class="pop_body__body">
-                            <div class="pop_body__body_item">
-                                <p class="text_20">Обязанности</p>
-                                <ul class="list">
-                                    <li>Разработка КД на трубопроводную арматуру</li>
-                                    <li>Авторский надзор</li>
-                                    <li>Расчет на прочность различных видов соединений и сосудов</li>
-                                </ul>
-                            </div>
-                            <div class="pop_body__body_item">
-                                <p class="text_20">Требования</p>
-                                <ul class="list">
-                                    <li>Высшее техническое образование</li>
-                                    <li>Знание ЕСКД</li>
-                                    <li>Опыт работы инженером-конструктором от 3-х лет</li>
-                                </ul>
-                            </div>
-                            <div class="pop_body__body_item">
-                                <p class="text_20">Условия</p>
-                                <ul class="list">
-                                    <li>Работа в г. КОЛПИНО</li>
-                                    <li>График 5/2, с 8.00 до 16.30</li>
-                                    <li>Достойная заработная плата (обсуждается на собеседовании)</li>
-                                    <li>Полное соблюдение ТК (оформление по ТК, оплачиваемые отпуска, больничные и т. п.)</li>
-                                    <li>Развозка от м.Пр.Ветеранов, из г. Гатчина (ЛО)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="question_box">
-                            <div class="qb_title">
-                                <p class="text_20">Хотите у нас работать?</p>
-                            </div>
-                            <div class="qb_body">
-                                <div class="left">
-                                    <div class="caps_mini">Присылайте ваши резюме по адресу:</div>
-                                    <a href="mailto:info@roost.ru" class="link link_green link_post">info@roost.ru</a>
+                    <div class="popup_inner__body">
+                       <p class="popup_title caps_mini">Санкт-Петербург</p>
+                        <div class="pop_body pb_column">
+                            <div class="pop_body__title">
+                                <h3>Инженер-конструктор (промышленная трубопроводная арматура)</h3>
+                                <div class="exp">
+                                    <p  class="text_14">Опыт от 1 до 3 лет</p>
+                                    <span>|</span>
+                                    <p class="text_14">Полная занятость</p>
                                 </div>
-                                <div class="right">
-                                    <div class="caps_mini">Присылайте ваши резюме по адресу:</div>
-                                    <a href="tel:88123348441" class="link link_phone">+7 (812) 334-84-41</a>
+                            </div>
+                            <div class="pop_body__body">
+                                <div class="pop_body__body_item">
+                                    <p class="text_20">Обязанности</p>
+                                    <ul class="list">
+                                        <li>Разработка КД на трубопроводную арматуру</li>
+                                        <li>Авторский надзор</li>
+                                        <li>Расчет на прочность различных видов соединений и сосудов</li>
+                                    </ul>
+                                </div>
+                                <div class="pop_body__body_item">
+                                    <p class="text_20">Требования</p>
+                                    <ul class="list">
+                                        <li>Высшее техническое образование</li>
+                                        <li>Знание ЕСКД</li>
+                                        <li>Опыт работы инженером-конструктором от 3-х лет</li>
+                                    </ul>
+                                </div>
+                                <div class="pop_body__body_item">
+                                    <p class="text_20">Условия</p>
+                                    <ul class="list">
+                                        <li>Работа в г. КОЛПИНО</li>
+                                        <li>График 5/2, с 8.00 до 16.30</li>
+                                        <li>Достойная заработная плата (обсуждается на собеседовании)</li>
+                                        <li>Полное соблюдение ТК (оформление по ТК, оплачиваемые отпуска, больничные и т. п.)</li>
+                                        <li>Развозка от м.Пр.Ветеранов, из г. Гатчина (ЛО)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="question_box">
+                                <div class="qb_title">
+                                    <p class="text_20">Хотите у нас работать?</p>
+                                </div>
+                                <div class="qb_body">
+                                    <div class="left">
+                                        <div class="caps_mini">Присылайте ваши резюме по адресу:</div>
+                                        <a href="mailto:info@roost.ru" class="link link_green link_post">info@roost.ru</a>
+                                    </div>
+                                    <div class="right">
+                                        <div class="caps_mini">Присылайте ваши резюме по адресу:</div>
+                                        <a href="tel:88123348441" class="link link_phone">+7 (812) 334-84-41</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
-    </section>
+    </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
@@ -433,6 +432,7 @@
 <script src="js/libs/jquery.viewportchecker.min.js"></script>
 <script src="js/libs/jquery.hc-sticky.min.js"></script>
 <script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/jquery.fancybox/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

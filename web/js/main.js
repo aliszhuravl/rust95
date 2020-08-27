@@ -183,6 +183,24 @@ $(document).ready(function() {
         });
     });
 
+    $('#pu_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        cssEase: 'linear',
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        prevArrow: $('#btn_prev_c'),
+        nextArrow: $('#btn_next_c')
+    });
+
+    $('#pu_slider')
+        .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            var indexSlide = nextSlide + 1;
+            $('.b-slide-number').text(indexSlide);
+        });
+
 });
 // $(document).ready(function() {
 //     $('#loader1').animate({
@@ -388,42 +406,95 @@ $('.dropdown').each(function () {
     });
 });
 $(document).ready(function(){
-    $('.gb_animate').viewportChecker({
-        classToAdd: 'visible animated fadeIn',
-        offset: 250
+    if($('.gb_animate').length) {
+        $('.gb_animate').viewportChecker({
+            classToAdd: 'visible animated fadeIn',
+            offset: 250
+        });
+        $('.gs_animate').viewportChecker({
+            classToAdd: 'visible animated fadeIn',
+            offset: 100
+        });
+    }
+});
+$(document).ready(function() {
+
+    $(".modal_show").click(function () {
+        $(".popup_wrapper").fadeIn(300);
+        $(".popup").fadeIn(300);
+        $('body').addClass('stop');
     });
-    $('.gs_animate').viewportChecker({
-        classToAdd: 'visible animated fadeIn',
-        offset: 100
+
+    $(".cross-pop").click(function () {
+        $(".popup_wrapper").fadeOut(300);
+        $(".popup").fadeOut(300);
+        $('body').removeClass('stop');
+    });
+
+    $(document).mouseup(function (e){
+        var modalctr = $(".popup_wrapper");
+        var modal = $(".popup");
+        if (!modal.is(e.target) && modal.has(e.target).length === 0){
+            modalctr.hide();
+        }
+        $('body').removeClass('stop');
     });
 });
 
-$(document).ready(function() {
-    $(".call_popup").click(function () {
-        $(".popm").addClass('visible_popup');
-        $("body").addClass('stop');
-    });
-
-    $("#cross-pop").click(function () {
-        $(".popup_wrapper").removeClass('visible_popup');
-        $("body").removeClass('stop');
-    });
-
-    $("#vacancy").click(function () {
-        $(".pop-v").addClass('visible_popup');
-        $("body").addClass('stop');
-    });
-
-    $("#cross-pop").click(function () {
-        $(".popup_wrapper").removeClass('visible_popup');
-        $("body").removeClass('stop');
-    });
-
+(function($) {
     $("#call_search").click(function () {
         $(".search_block").addClass('visible_search');
     });
 
     $("#cross-search").click(function () {
         $(".search_block").removeClass('visible_search');
-    });
 });
+})(jQuery);
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+});
+
+// Fires whenever a player has finished loading
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
+
+// Fires when the player's state changes.
+function onPlayerStateChange(event) {
+    // Go to the next video after the current one is finished playing
+    if (event.data === 0) {
+        $.fancybox.next();
+    }
+}
+
+
+// The API will call this function when the page has finished downloading the JavaScript for the player API
+function onYouTubePlayerAPIReady() {
+
+    // Initialise the fancyBox after the DOM is loaded
+    $(document).ready(function() {
+        $(".fancybox-video")
+            .attr('rel', 'gallery')
+            .fancybox({
+                openEffect  : 'none',
+                closeEffect : 'none',
+                nextEffect  : 'none',
+                prevEffect  : 'none',
+                padding     : 0,
+                margin      : 50,
+                beforeShow  : function() {
+                    // Find the iframe ID
+                    var id = $.fancybox.inner.find('iframe').attr('id');
+
+                    // Create video player object and add event listeners
+                    var player = new YT.Player(id, {
+                        events: {
+                            'onReady': onPlayerReady,
+                            'onStateChange': onPlayerStateChange
+                        }
+                    });
+                }
+            });
+    });
+
+}

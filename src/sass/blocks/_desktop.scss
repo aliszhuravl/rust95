@@ -23,7 +23,7 @@
     line-height: 20px;
   }
   .header__inner {
-    padding: 24px 40px;
+    padding: 0 40px;
   }
   .grid_block {
     width: 100%;
@@ -105,6 +105,10 @@
     font-size: 14px;
     line-height: 20px;
   }
+  .text_14 {
+    font-size: 12px;
+    line-height: 20px;
+  }
   .small {
     font-size: 12px;
     line-height: 20px;
@@ -151,5 +155,20 @@
   }
   .nav__list .dropdown .dropdown__text p {
     font-size: 14px;
+  }
+  .item_body .left .side_menu__inner ul li {
+    padding-right: 0;
+    .link {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  .categories_body {
+    .right {
+      padding-left: 40px;
+    }
+  }
+  .options_table__body_row .left {
+    padding-right: 12px;
   }
 }

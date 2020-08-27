@@ -5,12 +5,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 8;
+  display: none;
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+  overflow-y: auto;
 }
 
 .popup {
@@ -20,10 +19,15 @@
   transform: translateX(50%);
   right: 50%;
   top: 5%;
-  z-index: 5;
   max-width: 768px;
-  //height: inherit;
   margin: 20px 0;
+  display: none;
+  z-index: 9;
+    video {
+      object-fit: cover;
+      width: 100%;
+      display: block;
+    }
     &_inner {
       width: 100%;
       padding: 40px;
@@ -134,26 +138,6 @@
 
 .pb_column {
   flex-direction: column;
-}
-
-.pop-v {
-  .popup {
-    &_inner {
-      padding: 0;
-        .popup_title {
-          padding: 40px 40px 0 40px;
-        }
-      .pop_body {
-        margin-bottom: 0;
-      }
-      .pop_body__title {
-        padding: 0 40px;
-      }
-      .pop_body__body {
-        padding: 0 40px;
-      }
-    }
-  }
 }
 
 .question_box {
