@@ -419,7 +419,7 @@ $(document).ready(function(){
 });
 $(document).ready(function() {
 
-    $(".modal_show").click(function () {
+    $(".call-popup").click(function () {
         $(".popup_wrapper").fadeIn(300);
         $(".popup").fadeIn(300);
         $('body').addClass('stop');

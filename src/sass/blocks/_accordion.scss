@@ -94,3 +94,17 @@
   max-width: 100%;
   position: absolute;
 }
+
+.sections_acc {
+  margin-bottom: 56px;
+  .accordion__btn {
+    justify-content: flex-start;
+      img {
+        margin-right: 20px;
+      }
+    .accordion__text {
+      position: static;
+      margin-bottom: 0;
+    }
+  }
+}
