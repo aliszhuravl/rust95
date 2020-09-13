@@ -108,6 +108,15 @@
   .text_14 {
     font-size: 12px;
     line-height: 20px;
+      .link {
+        font-size: 12px !important;
+      }
+  }
+  .body_sidebar__sidebar .sidebar_box .btn {
+    font-size: 14px;
+  }
+  .caps_mini {
+    font-size: 10px;
   }
   .small {
     font-size: 12px;
@@ -170,5 +179,12 @@
   }
   .options_table__body_row .left {
     padding-right: 12px;
+  }
+}
+
+@media (max-height: 850px) {
+
+  .item_body .left .side_menu {
+    height: calc(100% - 400px);
   }
 }

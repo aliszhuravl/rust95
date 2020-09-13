@@ -292,14 +292,14 @@ $(document).ready(function() {
 
     function hamburgerOpen() {
         hamburger.addClass('hamburger_active');
-        $('body').addClass('stopped');
-        $('.menu').addClass('menu-mobile_opened');
+        $('body').addClass('stop');
+        $('.menu_opener').addClass('menu-mobile_opened');
     }
 
     function hamburgerClose() {
         hamburger.removeClass('hamburger_active');
-        $('body').removeClass('stopped');
-        $('.menu').removeClass('menu-mobile_opened');
+        $('body').removeClass('stop');
+        $('.menu_opener').removeClass('menu-mobile_opened');
     }
 
     hamburger.on('click', function () {
@@ -308,10 +308,6 @@ $(document).ready(function() {
         } else {
             hamburgerOpen();
         }
-    });
-
-    $('.menu-mobile__close').on('click', function () {
-        body.addClass('menu-mobile_closed');
     });
 })(jQuery);
 (function($) {
@@ -419,37 +415,15 @@ $(document).ready(function(){
 });
 $(document).ready(function() {
 
-    $(".call-popup").click(function () {
-        $(".popup_wrapper").fadeIn(300);
-        $(".popup").fadeIn(300);
-        $('body').addClass('stop');
-    });
-
-    $(".cross-pop").click(function () {
-        $(".popup_wrapper").fadeOut(300);
-        $(".popup").fadeOut(300);
-        $('body').removeClass('stop');
-    });
-
-    $(document).mouseup(function (e){
-        var modalctr = $(".popup_wrapper");
-        var modal = $(".popup");
-        if (!modal.is(e.target) && modal.has(e.target).length === 0){
-            modalctr.hide();
-        }
-        $('body').removeClass('stop');
-    });
-});
-
-(function($) {
     $("#call_search").click(function () {
         $(".search_block").addClass('visible_search');
     });
 
     $("#cross-search").click(function () {
         $(".search_block").removeClass('visible_search');
+
+    });
 });
-})(jQuery);
 $(document).ready(function() {
     $(".fancybox").fancybox();
 });
@@ -498,3 +472,21 @@ function onYouTubePlayerAPIReady() {
     });
 
 }
+(function($) {
+  var slinky = $('.js-menu').slinky({
+    title: true
+  });
+})(jQuery);
+$(document).ready(function() {
+    var scrolled;
+    window.onscroll = function () {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrolled > 80) {
+            $(".header").addClass('header_sticky')
+        }
+        if (80 > scrolled) {
+            $(".header").removeClass('header_sticky')
+        }
+
+    }
+});

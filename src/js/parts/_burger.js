@@ -4,14 +4,14 @@
 
     function hamburgerOpen() {
         hamburger.addClass('hamburger_active');
-        $('body').addClass('stopped');
-        $('.menu').addClass('menu-mobile_opened');
+        $('body').addClass('stop');
+        $('.menu_opener').addClass('menu-mobile_opened');
     }
 
     function hamburgerClose() {
         hamburger.removeClass('hamburger_active');
-        $('body').removeClass('stopped');
-        $('.menu').removeClass('menu-mobile_opened');
+        $('body').removeClass('stop');
+        $('.menu_opener').removeClass('menu-mobile_opened');
     }
 
     hamburger.on('click', function () {
@@ -20,9 +20,5 @@
         } else {
             hamburgerOpen();
         }
-    });
-
-    $('.menu-mobile__close').on('click', function () {
-        body.addClass('menu-mobile_closed');
     });
 })(jQuery);

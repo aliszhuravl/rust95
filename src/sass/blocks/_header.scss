@@ -1,9 +1,8 @@
 .header {
   border-bottom: 1px solid $color-gray-border;
-  position: sticky;
-  top: 0;
+  position: static;
   background-color: #fff;
-  z-index: 7;
+  //z-index: 7;
 }
 
 .header__inner {

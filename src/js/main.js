@@ -11,5 +11,8 @@
 //= parts/_sticky.js
 //= parts/_dropdown.js
 //= parts/_vp-animate.js
-//= parts/_popup.js
+//= parts/_search.js
 //= parts/_fancybox.js
+//= parts/_slinky.js
+//= parts/_scroll-menu.js
+//= parts/_view.js
