@@ -130,37 +130,37 @@
               flex-direction: column;
               max-width: fit-content;
                 li {
-                  padding: 20px 12px 12px 0;
                   border-bottom: 1px solid $color-gray-border;
                   transition: all 0.3s ease-out;
                   cursor: pointer;
-
                   position: relative;
                     .link {
+                      position: relative;
                       font-size: 16px;
                       font-family: $font-family-medium;
                       color: $color-black-light;
                       line-height: 24px;
                       width: 100%;
-                        &:hover {
-                          color: $color-black;
-                        }
-                    }
-                  &:after {
-                    width: 0;
-                    height: 1px;
-                    background-color: $color-green;
-                    position: absolute;
-                    left: 0;
-                    bottom: -1px;
-                    content: '';
-                    transition: all 0.3s ease-out;
-                  }
-                  &:hover {
+                      max-width: 100%;
+                      padding: 20px 12px 12px 0;
+
                       &:after {
-                        width: 100%;
+                        width: 0;
+                        height: 1px;
+                        background-color: $color-green;
+                        position: absolute;
+                        left: 0;
+                        bottom: -1px;
+                        content: '';
+                        transition: all 0.3s ease-out;
                       }
-                  }
+                      &:hover {
+                        color: $color-black;
+                        &:after {
+                          width: 100%;
+                        }
+                      }
+                    }
                 }
             }
           }

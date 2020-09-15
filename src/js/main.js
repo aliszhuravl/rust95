@@ -1,6 +1,5 @@
 //= parts/_viewport.js
 //= parts/_ie.js
-//= parts/_link-highlighting.js
 //= parts/_scrolling.js
 //= parts/_slick.js
 //= parts/_main.js
@@ -16,3 +15,4 @@
 //= parts/_slinky.js
 //= parts/_scroll-menu.js
 //= parts/_view.js
+//= parts/_link-highlighting.js

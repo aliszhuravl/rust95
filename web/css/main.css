@@ -2205,7 +2205,12 @@ select {
 	align-items: center;
 }
 
-.sections_menu ul li img {
+.sections_menu ul li a {
+	display: flex;
+	align-items: center;
+}
+
+.sections_menu ul li a img {
 	margin-right: 20px;
 }
 
@@ -2300,6 +2305,29 @@ select {
 }
 
 .current:after {
+	width: 100% !important;
+}
+
+.error_box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 60px 0;
+	align-items: center;
+	justify-content: center;
+}
+
+.error_box img {
+	margin-bottom: 32px;
+}
+
+.error_box .error_message p {
+	max-width: 320px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.active_link:after {
 	width: 100% !important;
 }
 
@@ -3426,7 +3454,7 @@ select {
 }
 
 .sb_order__phone .btn {
-	font-size: 14px;
+	font-size: 14px !important;
 	margin-top: 32px;
 }
 
@@ -3928,7 +3956,6 @@ select {
 
 .item_body .left .side_menu__inner ul li {
 	position: relative;
-	padding: 20px 12px 12px 0;
 	cursor: pointer;
 	transition: all .3s ease-out;
 	border-bottom: 1px solid #e2e4ea;
@@ -3939,16 +3966,15 @@ select {
 	font-family: 'Gilroy-Medium', 'Arial', serif;
 	font-size: 16px;
 	line-height: 24px;
+	position: relative;
 	width: 100%;
+	max-width: 100%;
+	padding: 20px 12px 12px 0;
 	color: #545963;
 }
 
-.item_body .left .side_menu__inner ul li .link:hover,
-.item_body .left .side_menu__inner ul li .nav__link:hover {
-	color: #1e2127;
-}
-
-.item_body .left .side_menu__inner ul li:after {
+.item_body .left .side_menu__inner ul li .link:after,
+.item_body .left .side_menu__inner ul li .nav__link:after {
 	position: absolute;
 	bottom: -1px;
 	left: 0;
@@ -3959,7 +3985,13 @@ select {
 	background-color: #2a9260;
 }
 
-.item_body .left .side_menu__inner ul li:hover:after {
+.item_body .left .side_menu__inner ul li .link:hover,
+.item_body .left .side_menu__inner ul li .nav__link:hover {
+	color: #1e2127;
+}
+
+.item_body .left .side_menu__inner ul li .link:hover:after,
+.item_body .left .side_menu__inner ul li .nav__link:hover:after {
 	width: 100%;
 }
 
@@ -4363,10 +4395,6 @@ select {
 	font-family: 'Inter_Regular', 'Arial', serif;
 	font-size: 14px;
 	line-height: 20px;
-}
-
-.active {
-	background-color: #545963;
 }
 
 .contacts_box {
@@ -7507,6 +7535,14 @@ h3 {
 .video_frame {
 	width: 100%;
 	min-width: 100%;
+}
+
+.error_box {
+	padding: 40px 20px;
+}
+
+.error_box img {
+	width: 100%;
 }
 
 .tile_logos .tile__item {

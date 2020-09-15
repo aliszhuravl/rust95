@@ -46,20 +46,6 @@ window.onload = function() {
         return;
     }
 };
-// (function($) {
-//
-//     function linkHighlight(linkClass) {
-//
-//         /* highlight active menu item*/
-//         $(linkClass).each(function (index) {
-//             if (this.href.trim() == window.location)
-//                 $(this).addClass('link_active');
-//         });
-//     }
-//
-//     linkHighlight('.nav__link');
-//
-// })(jQuery);
 (function($) {
 
     function smoothScroll(link) {
@@ -70,7 +56,7 @@ window.onload = function() {
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html, body').animate({
-                        scrollTop: target.offset().top - 80
+                        scrollTop: target.offset().top - 200
                     }, 800);
                     return false;
                 }
@@ -490,3 +476,39 @@ $(document).ready(function() {
 
     }
 });
+jQuery(function($) {
+
+    const section = $('.accordion__item'),
+        nav = $('.docs_menu'),
+        navHeight = nav.outerHeight(); // получаем высоту навигации
+
+
+    $(window).on('scroll', function () {
+        const position = $(this).scrollTop();
+
+        section.each(function () {
+            const top = $(this).offset().top - navHeight + 300,
+                bottom = top + $(this).outerHeight();
+
+            if (position >= top && position <= bottom) {
+                nav.find('a').removeClass('active_link');
+                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active_link');
+            }
+        });
+    });
+
+});
+(function($) {
+
+    function linkHighlight(linkClass) {
+
+        /* highlight active menu item*/
+        $(linkClass).each(function (index) {
+            if (this.href.trim() == window.location)
+                $(this).addClass('link_active');
+        });
+    }
+
+    linkHighlight('.link-to-block');
+
+})(jQuery);
