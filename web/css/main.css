@@ -524,6 +524,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	transition: all .3s ease-out;
 	letter-spacing: -.01em;
 	color: #1e2127;
 }
@@ -1727,6 +1728,7 @@ select {
 
 .tile_4 .tile__item_top {
 	margin-bottom: 32px;
+	padding: 12px 0;
 	border-bottom: 1px solid #e2e4ea;
 }
 
@@ -3239,7 +3241,7 @@ select {
 
 .body_sidebar__content {
 	width: 75%;
-	margin-right: 60px;
+	margin-right: 120px;
 }
 
 .body_sidebar__content .tile {
@@ -3404,6 +3406,10 @@ select {
 
 .sert_main .tile__item {
 	margin-bottom: 32px;
+}
+
+.sert_main .tile__item_top {
+	padding: 12px 0;
 }
 
 .sert_main .tile__item img {
@@ -5611,7 +5617,7 @@ ol li::before {
 }
 
 .article_content {
-	margin-right: 80px;
+	margin-right: 120px;
 }
 
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */

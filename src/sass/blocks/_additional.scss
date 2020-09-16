@@ -47,7 +47,7 @@
   justify-content: space-between;
     &__content {
       width: 75%;
-      margin-right: 60px;
+      margin-right: 120px;
         .tile {
           align-items: stretch;
           &__item {
@@ -186,6 +186,9 @@
 .sert_main {
   .tile__item {
     margin-bottom: 32px;
+    &_top {
+      padding: 12px 0;
+    }
     img {
       width: auto;
       max-width: 136px;
