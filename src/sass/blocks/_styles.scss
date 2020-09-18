@@ -353,27 +353,27 @@
   .arrow {
     margin-left: 12px;
     left: 100%;
-    height: 1px;
+    height: 2px;
     width: 16px;
     background-color: #CED2DC;
     position: absolute !important;
     content: '';
     will-change: width;
-    transition: all 0.4s ease-out;
+    transition: all 0.2s ease-out;
     &:after {
       position: absolute;
       content: '';
       right: 0;
       top: -3px;
-      width: 7px;
-      height: 7px;
-      border-right: 1px solid #CED2DC;
-      border-top: 1px solid #CED2DC;
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid #CED2DC;
+      border-top: 2px solid #CED2DC;
       transform: rotate(45deg);
     }
   }
   &:hover {
-    transition: all 0.4s ease-out;
+    transition: all 0.2s ease-out;
     .arrow {
       width: 20px;
     }

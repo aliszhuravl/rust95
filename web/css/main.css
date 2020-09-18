@@ -1819,10 +1819,10 @@ select {
 	position: absolute !important;
 	left: 100%;
 	width: 16px;
-	height: 1px;
+	height: 2px;
 	margin-left: 12px;
 	content: '';
-	transition: all .4s ease-out;
+	transition: all .2s ease-out;
 	background-color: #ced2dc;
 	will-change: width;
 }
@@ -1831,17 +1831,17 @@ select {
 	position: absolute;
 	top: -3px;
 	right: 0;
-	width: 7px;
-	height: 7px;
+	width: 8px;
+	height: 8px;
 	content: '';
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
-	border-top: 1px solid #ced2dc;
-	border-right: 1px solid #ced2dc;
+	border-top: 2px solid #ced2dc;
+	border-right: 2px solid #ced2dc;
 }
 
 .link_with-arrow:hover {
-	transition: all .4s ease-out;
+	transition: all .2s ease-out;
 }
 
 .link_with-arrow:hover .arrow {
@@ -2486,7 +2486,7 @@ select {
 .video_slider__inner .vs_slide__inner .video_container {
 	position: relative;
 	width: 100%;
-	height: 770px;
+	max-height: 770px;
 }
 
 .video_slider__inner .vs_slide__inner .video_container::after {
@@ -3405,7 +3405,10 @@ select {
 }
 
 .sert_main .tile__item {
-	margin-bottom: 32px;
+	width: calc(25% - 30px);
+	margin-right: 40px;
+	margin-bottom: 40px;
+	border: 1px solid #e2e4ea;
 }
 
 .sert_main .tile__item_top {
@@ -6577,6 +6580,13 @@ h1 {
 	position: absolute;
 	z-index: 2;
 	right: -240px;
+}
+
+.sert_main .tile__item {
+	width: calc(25% - 24px);
+	margin-right: 32px;
+	margin-bottom: 32px;
+	border: 1px solid #e2e4ea;
 }
 
 .main_item {

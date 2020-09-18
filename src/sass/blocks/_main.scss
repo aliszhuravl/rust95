@@ -128,7 +128,7 @@
                 .video_container {
                   width: 100%;
                   position: relative;
-                  height: 770px;
+                  max-height: 770px;
                     &::after {
                       position: absolute;
                       top:0;

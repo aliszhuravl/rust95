@@ -185,7 +185,10 @@
 
 .sert_main {
   .tile__item {
-    margin-bottom: 32px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    width: calc(25% - 30px);
+    border: 1px solid #e2e4ea;
     &_top {
       padding: 12px 0;
     }

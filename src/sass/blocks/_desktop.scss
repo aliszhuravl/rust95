@@ -36,6 +36,12 @@
     z-index: 2;
     right: -240px;
   }
+  .sert_main .tile__item {
+    width: calc(25% - 24px);
+    margin-right: 32px;
+    margin-bottom: 32px;
+    border: 1px solid #e2e4ea;
+  }
   .main_item {
     background-position: 120% center;
   }
