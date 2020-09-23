@@ -16,3 +16,4 @@
 //= parts/_scroll-menu.js
 //= parts/_view.js
 //= parts/_link-highlighting.js
+//= parts/_video.js

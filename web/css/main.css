@@ -2333,6 +2333,25 @@ select {
 	width: 100% !important;
 }
 
+.film_large {
+	position: relative;
+	width: 100%;
+}
+
+.film_large .cover_film {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	background-image: url('../img/cover.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
 .main_item {
 	position: relative;
 	display: flex;
@@ -6406,6 +6425,8 @@ ol li::before {
 
 .invisible {
 	visibility: hidden;
+	transition: all .3s ease-out;
+	opacity: 0;
 }
 
 .flex-center {
@@ -7217,6 +7238,8 @@ h3 {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	text-decoration: none;
+	color: #fff;
 	align-items: center;
 	justify-content: center;
 }
@@ -7559,6 +7582,19 @@ h3 {
 
 .error_box img {
 	width: 100%;
+}
+
+.video-box .pop_img {
+	margin-top: 30px;
+}
+
+.video-box .popup_title {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.big_film {
+	height: 320px;
 }
 
 .tile_logos .tile__item {

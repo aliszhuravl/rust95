@@ -363,6 +363,8 @@
         justify-content: center;
         position: relative;
         height: 100%;
+        color: #fff;
+        text-decoration: none;
         .mv_title {
           position: relative;
           z-index: 2;
@@ -646,5 +648,17 @@
   }
   .error_box img {
     width: 100%;
+  }
+  .video-box {
+    .pop_img {
+      margin-top: 30px;
+    }
+    .popup_title {
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+  .big_film {
+    height: 320px;
   }
 }
