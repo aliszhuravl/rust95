@@ -576,6 +576,9 @@
       min-width: 960px;
       margin: 0 auto;
       padding: 56px 0;
+        .search_item {
+          margin-bottom: 0;
+        }
     }
   .close_pop {
     transform: rotate(45deg);

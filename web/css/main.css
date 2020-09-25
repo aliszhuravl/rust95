@@ -1123,9 +1123,6 @@ select {
 	border-right: 0;
 	border-left: 0;
 	border-radius: 0;
-	background-image: url('../img/loop.svg');
-	background-repeat: no-repeat;
-	background-position: 99% center;
 	background-size: 16px;
 }
 
@@ -1152,6 +1149,27 @@ select {
 	border-right: 0;
 	border-left: 0;
 	border-radius: 0;
+}
+
+.form_search {
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin-bottom: 32px;
+	align-items: center;
+}
+
+.form_search .btn_transparent {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border: 0;
+	border-radius: 0;
+	background-color: transparent;
+	box-shadow: 0;
 }
 
 /* fuck ie */
@@ -2062,6 +2080,10 @@ select {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 56px 0;
+}
+
+.search_block__inner .search_item {
+	margin-bottom: 0;
 }
 
 .search_block .close_pop {
