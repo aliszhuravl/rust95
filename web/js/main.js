@@ -142,7 +142,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 1000,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 8000,
         arrows: false,
         autoplay: true,
         fade: true,
@@ -460,7 +460,8 @@ function onYouTubePlayerAPIReady() {
 }
 (function($) {
   var slinky = $('.js-menu').slinky({
-    title: true
+    title: true,
+    resize: true
   });
 })(jQuery);
 $(document).ready(function() {

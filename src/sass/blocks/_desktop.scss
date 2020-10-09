@@ -194,3 +194,9 @@
     height: calc(100% - 400px);
   }
 }
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .video_slider__inner .vs_slide__inner .video_container video {
+    max-height: 550px;
+  }
+}

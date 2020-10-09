@@ -700,8 +700,8 @@ h3 {
 }
 
 .line_active {
-	-webkit-animation: progress 6s ease-out;
-	animation: progress 6s ease-out;
+	-webkit-animation: progress 9s ease-out;
+	animation: progress 9s ease-out;
 	-webkit-animation-iteration-count: infinite;
 	-moz-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
@@ -5587,6 +5587,14 @@ ol li::before {
 	font-size: 26px;
 }
 
+.inprogress {
+	padding-top: 40px;
+}
+
+.inprogress .text_28 {
+	margin-bottom: 20px;
+}
+
 .article h2 {
 	font-size: 28px;
 	line-height: 32px;
@@ -6573,6 +6581,14 @@ ol li::before {
 	position: sticky;
 	z-index: 99;
 	top: 0;
+}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+
+.video_slider__inner .vs_slide__inner .video_container video {
+	max-height: 550px;
 }
 
 }
@@ -7617,6 +7633,10 @@ h3 {
 
 .big_film {
 	height: 320px;
+}
+
+.inprogress {
+	padding-top: 80px;
 }
 
 .tile_logos .tile__item {

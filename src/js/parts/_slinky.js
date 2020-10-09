@@ -1,5 +1,6 @@
 (function($) {
   var slinky = $('.js-menu').slinky({
-    title: true
+    title: true,
+    resize: true
   });
 })(jQuery);
