@@ -865,3 +865,35 @@
     background-position: center;
   }
 }
+
+.gray_quote {
+  padding: 40px 32px;
+  width: 100%;
+  background-color: $color-gray-bg;
+  margin: 56px 0;
+    .list {
+      margin-top: 32px;
+      width: 100%;
+      column-count: 2;
+        li {
+          color: #545963;
+        }
+    }
+}
+
+.service {
+  padding-left: 60px !important;
+}
+
+.service_box {
+  .sm_text {
+    border-bottom: 1px solid $color-gray-border;
+    margin-bottom: 20px;
+  }
+  .sidebar_box__phone {
+    a {
+      font-size: 26px;
+      font-family: $font-family_Inter;
+    }
+  }
+}

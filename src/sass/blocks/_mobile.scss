@@ -664,4 +664,17 @@
   .inprogress {
     padding-top: 80px;
   }
+  .service {
+    padding-left: 0 !important;
+  }
+  .gray_quote .list {
+    column-count: 1;
+  }
+  .gray_quote {
+    margin: 40px 0;
+    padding: 32px 24px;
+  }
+  .service_box {
+    order: 2;
+  }
 }
